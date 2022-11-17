@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: Verify search page</title>
+<title>Cucumber Reports  - Tag: @NonTest</title>
 
 </head>
 <body>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 
 <div id="report-lead" class="container-fluid">
   <div class="col-md-10 col-md-offset-1">
-    <h2>Feature Report</h2>
+    <h2>Tag Report</h2>
   </div>
 </div>
 
@@ -106,7 +106,7 @@ $(document).ready(function() {
     <th colspan="2">Features</th>
   </tr>
   <tr>
-    <th>Feature</th>
+    <th>Tag</th>
     <th class="passed">Passed</th>
     <th class="failed">Failed</th>
     <th class="skipped">Skipped</th>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">Verify search page</td>
-          <td      class="passed"    >6</td>
+          <td class="tagname">@NonTest</td>
+          <td      class="passed"    >7</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td class="total">7</td>
 
-          <td  class="passed"    >2</td>
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td class="total">1</td>
 
-          <td class="duration" data-value="36414635000">36.414</td>
+          <td class="duration" data-value="89675763000">1:29.675</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -165,41 +165,33 @@ $(document).ready(function() {
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-      <div class="feature">
+      <div class="elements">
 
-<div class="tags indention">
-</div>
-
-
-<div class="brief passed">
-  <span class="keyword indention">Feature</span>
-  <span class="name">Verify search page</span>
-
-
-</div>
-
-        <div class="description indention"></div>
-
-        <div class="elements inner-level">
 
 <div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_6_1513022289.html">Withdraw with market value</a>
+    </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1290674695.html">@Search</a>
+       <a href="report-tag_1558916969.html">@Withdraw</a>
+       <a href="report-tag_856024266.html">@WithdrawMarketValue</a>
+       <a href="report-tag_1511064734.html">@NonTest</a>
 </div>
 
 
-  <span class="lead-duration duration">18.849</span>
+  <span class="lead-duration duration">1:29.675</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Search with valid data</span>
+  <span class="name">Verify withdraw success</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -230,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
 
-  <span class="lead-duration duration">0.659</span>
+  <span class="lead-duration duration">0.332</span>
 
           </div>
 
@@ -265,9 +257,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I click in search input</span>
+  <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">7.700</span>
+  <span class="lead-duration duration">10.610</span>
 
 </div>
 
@@ -304,7 +296,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.517</span>
+  <span class="lead-duration duration">0.205</span>
 
           </div>
 
@@ -316,14 +308,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>Search with valid data</a>
-      <a href="embeddings/embedding_1333795249.png" download target="_blank">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_756561076.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1333795249.png">
+        <img src="embeddings/embedding_756561076.png">
       </div>
     </div>
   </div>
@@ -339,9 +331,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter <span class="argument">&quot;dummy&quot;</span> in input search</span>
+  <span class="name">I press to withdraw market value button</span>
 
-  <span class="lead-duration duration">6.365</span>
+  <span class="lead-duration duration">4.404</span>
 
 </div>
 
@@ -378,7 +370,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.182</span>
+  <span class="lead-duration duration">0.193</span>
 
           </div>
 
@@ -390,14 +382,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
-      <a>Search with valid data</a>
-      <a href="embeddings/embedding_-1789283586.png" download target="_blank">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_2076761350.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-7" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1789283586.png">
+        <img src="embeddings/embedding_2076761350.png">
       </div>
     </div>
   </div>
@@ -413,9 +405,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">All data displayed must be contains <span class="argument">&quot;dummy&quot;</span></span>
+  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
 
-  <span class="lead-duration duration">4.783</span>
+  <span class="lead-duration duration">6.997</span>
 
 </div>
 
@@ -452,7 +444,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.210</span>
+  <span class="lead-duration duration">0.185</span>
 
           </div>
 
@@ -464,14 +456,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
-      <a>Search with valid data</a>
-      <a href="embeddings/embedding_470499001.png" download target="_blank">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_-16575993.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-9" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_470499001.png">
+        <img src="embeddings/embedding_-16575993.png">
       </div>
     </div>
   </div>
@@ -482,13 +474,32 @@ $(document).ready(function() {
   </div>
 
       </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter amount <span class="argument">&quot;0.5&quot;</span> SG in input</span>
+
+  <span class="lead-duration duration">8.367</span>
+
 </div>
 
 
 
 
-  <div class="inner-level hooks-element-after">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
 
 <div class="brief passed">
@@ -505,9 +516,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+              <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">4.799</span>
+  <span class="lead-duration duration">0.201</span>
 
           </div>
 
@@ -516,46 +527,54 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_339026606.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-11" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_339026606.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
   </div>
 
-  </div>
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap on <span class="argument">&quot;Withdraw SG Now&quot;</span> in request confirm</span>
+
+  <span class="lead-duration duration">26.574</span>
+
 </div>
 
 
-<div class="element">
 
 
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1290674695.html">@Search</a>
-</div>
 
 
-  <span class="lead-duration duration">17.564</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Search with invalid data</span>
 
 
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-11" class="collapse collapsable-details ">
 
 
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
+
+
+
+  <div class="inner-level hooks-step-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -567,13 +586,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-12" class="inner-level collapse collapsable-details ">
+    <div id="after-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.629</span>
+  <span class="lead-duration duration">0.236</span>
 
           </div>
 
@@ -582,35 +601,35 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-13" class="collapsable-control">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_1039521132.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-13" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1039521132.png">
+      </div>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>
   </div>
 
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      </div>
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I click in search input</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter password <span class="argument">&quot;Sg123123&quot;</span> of account sandbox and wait to payment success</span>
 
-  <span class="lead-duration duration">7.510</span>
+  <span class="lead-duration duration">30.194</span>
 
 </div>
 
@@ -647,7 +666,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.376</span>
+  <span class="lead-duration duration">0.195</span>
 
           </div>
 
@@ -659,14 +678,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
-      <a>Search with invalid data</a>
-      <a href="embeddings/embedding_-122189963.png" download target="_blank">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_744139124.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-15" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-122189963.png">
+        <img src="embeddings/embedding_744139124.png">
       </div>
     </div>
   </div>
@@ -680,11 +699,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter <span class="argument">&quot;&gt;-d&amp;^(*&quot;</span> in input search</span>
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I verify detail screen payment withdraw success</span>
 
-  <span class="lead-duration duration">6.948</span>
+  <span class="lead-duration duration">2.526</span>
 
 </div>
 
@@ -721,7 +740,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.159</span>
+  <span class="lead-duration duration">0.183</span>
 
           </div>
 
@@ -733,88 +752,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
-      <a>Search with invalid data</a>
-      <a href="embeddings/embedding_354406815.png" download target="_blank">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_-1738578754.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-17" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_354406815.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Results search must display with message no result found</span>
-
-  <span class="lead-duration duration">3.105</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="inner-level hooks-step-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-18" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">0.295</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-19" class="collapsable-control">
-      <a>Search with invalid data</a>
-      <a href="embeddings/embedding_-1678963960.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-19" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1678963960.png">
+        <img src="embeddings/embedding_-1738578754.png">
       </div>
     </div>
   </div>
@@ -832,7 +777,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-18">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -844,13 +789,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-20" class="inner-level collapse collapsable-details ">
+    <div id="after-18" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">4.483</span>
+  <span class="lead-duration duration">8.270</span>
 
           </div>
 
@@ -867,7 +812,6 @@ $(document).ready(function() {
   </div>
 </div>
 
-        </div>
 
       </div>
     </div>
