@@ -14,7 +14,6 @@
 <link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
 <link rel="stylesheet" href="css/font-awesome.min.css"/>
 <link rel="shortcut icon" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
 <script>
 $(document).ready(function() {
@@ -49,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Dummy",  "@NonTest",  "@Search",  "@ShoppingScreen",  "@TrendingProduct",  "@TrendingStore",  "@UpdateTransaction",  "@Verify",  "@ViewRecent",  "@Withdraw",  "@WithdrawGuaranteed",  "@WithdrawMarketValue",  "@iOS", ] ,
+        labels:  [ "@AccountScreen",  "@AssetScreen",  "@Dummy",  "@FAQScreen",  "@NonTest",  "@Search",  "@ShoppingScreen",  "@StakingScreen",  "@TrendingProduct",  "@TrendingStore",  "@UpdateStatus",  "@UpdateTransaction",  "@Verify",  "@ViewRecent",  "@Withdraw",  "@WithdrawGuaranteed",  "@WithdrawMarketValue",  "@iOS", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ] 
+                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -134,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>17 Nov 2022, 16:30</td>
+      <td>24 Nov 2022, 11:45</td>
     </tr>
   </tbody>
 </table>
@@ -196,20 +195,71 @@ $(document).ready(function() {
 
   <tbody>
       <tr>
+        <td class="tagname"><a href="report-tag_4065900696.html">@AccountScreen</a></td>
+
+        <td      class="passed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="113267426000">1:53.267</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_430613275.html">@AssetScreen</a></td>
+
+        <td      class="passed"    >6</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="89448244000">1:29.448</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
         <td class="tagname"><a href="report-tag_4046142535.html">@Dummy</a></td>
 
-        <td      class="passed"    >63</td>
+        <td      class="passed"    >55</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">63</td>
+        <td class="total">55</td>
 
-        <td  class="passed"    >10</td>
+        <td  class="passed"    >9</td>
         <td >0</td>
-        <td class="total">10</td>
+        <td class="total">9</td>
 
-        <td class="duration" data-value="533639519000">8:53.639</td>
+        <td class="duration" data-value="612029726000">10:12.029</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_3445781185.html">@FAQScreen</a></td>
+
+        <td      class="passed"    >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">3</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="40615280000">40.615</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -226,7 +276,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="89675763000">1:29.675</td>
+        <td class="duration" data-value="112104349000">1:52.104</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -243,11 +293,28 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="36414635000">36.414</td>
+        <td class="duration" data-value="56779130000">56.779</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_3220393043.html">@ShoppingScreen</a></td>
+
+        <td      class="passed"    >2</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="33101087000">33.101</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_2626013346.html">@StakingScreen</a></td>
 
         <td      class="passed"    >3</td>
         <td >0</td>
@@ -260,7 +327,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="50681049000">50.681</td>
+        <td class="duration" data-value="108764276000">1:48.764</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -277,24 +344,41 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="294139771000">4:54.139</td>
+        <td class="duration" data-value="373143477000">6:13.143</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1390721627.html">@TrendingStore</a></td>
 
-        <td      class="passed"    >34</td>
+        <td      class="passed"    >26</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">34</td>
+        <td class="total">26</td>
 
-        <td  class="passed"    >5</td>
+        <td  class="passed"    >4</td>
         <td >0</td>
-        <td class="total">5</td>
+        <td class="total">4</td>
 
-        <td class="duration" data-value="239499748000">3:59.499</td>
+        <td class="duration" data-value="238886249000">3:58.886</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-tag_4068109946.html">@UpdateStatus</a></td>
+
+        <td      class="passed"    >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="62884056000">1:2.884</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -311,24 +395,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="130824557000">2:10.824</td>
+        <td class="duration" data-value="155078730000">2:35.078</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_1377060056.html">@Verify</a></td>
 
-        <td      class="passed"    >3</td>
+        <td      class="passed"    >13</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">3</td>
+        <td class="total">13</td>
 
-        <td  class="passed"    >1</td>
+        <td  class="passed"    >5</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="50681049000">50.681</td>
+        <td class="duration" data-value="344581033000">5:44.581</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -345,7 +429,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="67813604000">1:7.813</td>
+        <td class="duration" data-value="73537444000">1:13.537</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -362,7 +446,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">13</td>
 
-        <td class="duration" data-value="465878127000">7:45.878</td>
+        <td class="duration" data-value="586627343000">9:46.627</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -379,7 +463,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">6</td>
 
-        <td class="duration" data-value="181766869000">3:1.766</td>
+        <td class="duration" data-value="229134389000">3:49.134</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
@@ -396,24 +480,24 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">7</td>
 
-        <td class="duration" data-value="284111258000">4:44.111</td>
+        <td class="duration" data-value="357492954000">5:57.492</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_2149493708.html">@iOS</a></td>
 
-        <td      class="passed"    >143</td>
+        <td      class="passed"    >145</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">143</td>
+        <td class="total">145</td>
 
-        <td  class="passed"    >27</td>
+        <td  class="passed"    >30</td>
         <td >0</td>
-        <td class="total">27</td>
+        <td class="total">30</td>
 
-        <td class="duration" data-value="1154426934000">19:14.426</td>
+        <td class="duration" data-value="1673554676000">27:53.554</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -421,19 +505,19 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>438</td>
+      <td>455</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>438</td>
+      <td>455</td>
 
-      <td>81</td>
+      <td>92</td>
       <td>0</td>
-      <td>81</td>
+      <td>92</td>
 
-      <td class="duration">59:39.552</td>
-      <td>13</td>
+      <td class="duration">1:27:41.029</td>
+      <td>18</td>
     </tr>
     <tr>
       <td></td>
