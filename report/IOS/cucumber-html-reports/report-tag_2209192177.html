@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Tag: @FAQScreen</title>
+<title>Cucumber Reports  - Tag: @Test</title>
 
 </head>
 <body>
@@ -126,19 +126,19 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">@FAQScreen</td>
-          <td      class="passed"    >3</td>
+          <td class="tagname">@Test</td>
+          <td      class="passed"    >4</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">3</td>
+          <td class="total">4</td>
 
           <td  class="passed"    >1</td>
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="44197120000">44.197</td>
+          <td class="duration" data-value="44299163000">44.299</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -171,27 +171,27 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_5_3365451618.html">Verify all screen shopping, Assets, Staking...</a>
+      <a href="report-feature_7_3165188647.html">Withdraw 2nd in a day</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_430613275.html">@AssetScreen</a>
-       <a href="report-tag_3445781185.html">@FAQScreen</a>
+       <a href="report-tag_214133181.html">@Withdraw2nd</a>
+       <a href="report-tag_856024266.html">@WithdrawMarketValue</a>
+       <a href="report-tag_2209192177.html">@Test</a>
 </div>
 
 
-  <span class="lead-duration duration">44.197</span>
+  <span class="lead-duration duration">44.299</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Shopping screen</span>
+  <span class="name">Verify withdraw 2nd in a day</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -222,7 +222,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
 
-  <span class="lead-duration duration">0.632</span>
+  <span class="lead-duration duration">0.647</span>
 
           </div>
 
@@ -257,9 +257,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon</span>
+  <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">15.276</span>
+  <span class="lead-duration duration">24.156</span>
 
 </div>
 
@@ -316,9 +316,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I tap on <span class="argument">&quot;FAQ About This Screen&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span></span>
+  <span class="name">I press to withdraw market value button</span>
 
-  <span class="lead-duration duration">12.584</span>
+  <span class="lead-duration duration">5.318</span>
 
 </div>
 
@@ -375,9 +375,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">Web view must display</span>
+  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
 
-  <span class="lead-duration duration">16.336</span>
+  <span class="lead-duration duration">7.631</span>
 
 </div>
 
@@ -429,13 +429,32 @@ $(document).ready(function() {
   </div>
 
       </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Message error must display <span class="argument">&quot;A withdrawal has been performed within the last 24 hours&quot;</span></span>
+
+  <span class="lead-duration duration">7.192</span>
+
 </div>
 
 
 
 
-  <div class="inner-level hooks-element-after">
+
+
+
+
+
+
+
+
+
+
+
+  <div class="inner-level hooks-step-after">
     <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
 
 <div class="brief passed">
@@ -452,9 +471,49 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.afterSteps(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-8" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">6.406</span>
+  <span class="lead-duration duration">6.647</span>
 
           </div>
 
@@ -465,15 +524,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
-      <a>Verify Shopping screen</a>
-      <a href="embeddings/embedding_-338520240.png" download target="_blank">
+    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+      <a>Verify withdraw 2nd in a day</a>
+      <a href="embeddings/embedding_-435023878.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-8" class="collapse collapsable-details ">
+    <div id="embedding-9" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-338520240.png">
+        <img src="embeddings/embedding_-435023878.png">
       </div>
     </div>
   </div>
