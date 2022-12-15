@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>08 Dec 2022, 14:53</td>
+      <td>15 Dec 2022, 14:55</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@ViewRecent</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >7</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">6</td>
+          <td >0</td>
+          <td class="total">7</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="118465470000">1:58.465</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="118726108000">1:58.726</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:58.465</span>
+  <span class="lead-duration duration">1:58.726</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify</span>
 
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
 
-  <span class="lead-duration duration">0.335</span>
+  <span class="lead-duration duration">0.663</span>
 
           </div>
 
@@ -237,9 +237,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -257,7 +257,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">24.062</span>
+  <span class="lead-duration duration">23.977</span>
 
 </div>
 
@@ -284,7 +284,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press more button in <span class="argument">&quot;Trending Stores&quot;</span> in iOS devices</span>
 
-  <span class="lead-duration duration">20.237</span>
+  <span class="lead-duration duration">20.241</span>
 
 </div>
 
@@ -311,7 +311,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press stores contains <span class="argument">&quot;dummy&quot;</span> in name shop</span>
 
-  <span class="lead-duration duration">11.861</span>
+  <span class="lead-duration duration">7.161</span>
 
 </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I go to screen shopping and get transId success</span>
 
-  <span class="lead-duration duration">24.131</span>
+  <span class="lead-duration duration">16.743</span>
 
 </div>
 
@@ -365,7 +365,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Back to home shopping page</span>
 
-  <span class="lead-duration duration">29.635</span>
+  <span class="lead-duration duration">29.579</span>
 
 </div>
 
@@ -388,11 +388,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Verify recently display with product just view</span>
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press more button in Viewed Recently</span>
 
-  <span class="lead-duration duration">8.537</span>
+  <span class="lead-duration duration">11.720</span>
 
 </div>
 
@@ -401,23 +401,32 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: Shop name not display expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at com.qa.pages.ShoppingPage.verifyRecentViewDisplayed(ShoppingPage.java:417)
-	at com.qa.stepdef.ShoppingPageSteps.verifyRecentViewed(ShoppingPageSteps.java:138)
-	at &#10045;.Verify recently display with product just view(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ViewRecentPage.feature:10)
-</pre>
-      </div>
-    </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify recently display with product just view</span>
+
+  <span class="lead-duration duration">9.303</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -437,7 +446,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -449,13 +458,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">10.458</span>
+  <span class="lead-duration duration">10.200</span>
 
           </div>
 
@@ -466,15 +475,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Verify</a>
-      <a href="embeddings/embedding_-817350345.png" download target="_blank">
+      <a href="embeddings/embedding_-2090297418.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
+    <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-817350345.png">
+        <img src="embeddings/embedding_-2090297418.png">
       </div>
     </div>
   </div>
