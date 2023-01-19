@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SG_auto_Test</td>
+      <td>12 Jan 2023, 12:42</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.gotoAccountPage()</td>
+              <td>4</td>
+              <td class="duration" data-value="7170902750">7.170</td>
+              <td class="duration" data-value="7170902750">13.123</td>
+              <td class="duration" data-value="28683611000">28.683</td>
+              <td class="failed">75.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.gotoNotificationCenter()</td>
+              <td>2</td>
+              <td class="duration" data-value="4054216000">4.054</td>
+              <td class="duration" data-value="4054216000">4.074</td>
+              <td class="duration" data-value="8108432000">8.108</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.pressToText(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="2280097500">2.280</td>
+              <td class="duration" data-value="2280097500">4.560</td>
+              <td class="duration" data-value="4560195000">4.560</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.verifyHistoryDisplay()</td>
+              <td>1</td>
+              <td class="duration" data-value="6722313000">6.722</td>
+              <td class="duration" data-value="6722313000">6.722</td>
+              <td class="duration" data-value="6722313000">6.722</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.verifyNotificationCenterScreen()</td>
+              <td>1</td>
+              <td class="duration" data-value="5459524000">5.459</td>
+              <td class="duration" data-value="5459524000">5.459</td>
+              <td class="duration" data-value="5459524000">5.459</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.verifyShopNameDisplay()</td>
+              <td>1</td>
+              <td class="duration" data-value="5578258000">5.578</td>
+              <td class="duration" data-value="5578258000">5.578</td>
+              <td class="duration" data-value="5578258000">5.578</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.AccountPageSteps.verifyShopNameDisplayInHistory()</td>
+              <td>1</td>
+              <td class="duration" data-value="31000">0.000</td>
+              <td class="duration" data-value="31000">0.000</td>
+              <td class="duration" data-value="31000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.BaseSteps.backToHomePage(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="28910190000">28.910</td>
+              <td class="duration" data-value="28910190000">33.609</td>
+              <td class="duration" data-value="57820380000">57.820</td>
+              <td class="failed">50.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.BaseSteps.verifyWebViewDisplay(java.lang.String)</td>
+              <td>4</td>
+              <td class="duration" data-value="16146336500">16.146</td>
+              <td class="duration" data-value="16146336500">18.985</td>
+              <td class="duration" data-value="64585346000">1:4.585</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.Hooks.initialize()</td>
+              <td>68</td>
+              <td class="duration" data-value="585688308">0.585</td>
+              <td class="duration" data-value="585688308">0.658</td>
+              <td class="duration" data-value="39826805000">39.826</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</td>
+              <td>68</td>
+              <td class="duration" data-value="8397223279">8.397</td>
+              <td class="duration" data-value="8397223279">13.809</td>
+              <td class="duration" data-value="571011183000">9:31.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ReferFriendSteps.pressReferButton()</td>
+              <td>3</td>
+              <td class="duration" data-value="18029250000">18.029</td>
+              <td class="duration" data-value="18029250000">18.167</td>
+              <td class="duration" data-value="54087750000">54.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ReferFriendSteps.pressToText(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3112321000">3.112</td>
+              <td class="duration" data-value="3112321000">3.165</td>
+              <td class="duration" data-value="6224642000">6.224</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.clickAllStores()</td>
+              <td>1</td>
+              <td class="duration" data-value="3583605000">3.583</td>
+              <td class="duration" data-value="3583605000">3.583</td>
+              <td class="duration" data-value="3583605000">3.583</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.clickSearchInput()</td>
+              <td>3</td>
+              <td class="duration" data-value="18973851000">18.973</td>
+              <td class="duration" data-value="18973851000">19.221</td>
+              <td class="duration" data-value="56921553000">56.921</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.enterInput(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="9177048500">9.177</td>
+              <td class="duration" data-value="9177048500">9.381</td>
+              <td class="duration" data-value="18354097000">18.354</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.enterTextToSearch(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="53880453000">53.880</td>
+              <td class="duration" data-value="53880453000">53.880</td>
+              <td class="duration" data-value="53880453000">53.880</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.verifyDataSearchResults(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1896935000">1.896</td>
+              <td class="duration" data-value="1896935000">1.896</td>
+              <td class="duration" data-value="1896935000">1.896</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.verifyResult(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8982381000">8.982</td>
+              <td class="duration" data-value="8982381000">8.982</td>
+              <td class="duration" data-value="8982381000">8.982</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.SearchPageSteps.verifyResultsNotDisplay()</td>
+              <td>1</td>
+              <td class="duration" data-value="2632021000">2.632</td>
+              <td class="duration" data-value="2632021000">2.632</td>
+              <td class="duration" data-value="2632021000">2.632</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.backToHomePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="39388910000">39.388</td>
+              <td class="duration" data-value="39388910000">39.388</td>
+              <td class="duration" data-value="39388910000">39.388</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.createTransaction(java.lang.String)</td>
+              <td>6</td>
+              <td class="duration" data-value="2435896500">2.435</td>
+              <td class="duration" data-value="2435896500">4.926</td>
+              <td class="duration" data-value="14615379000">14.615</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.getAllStores(java.lang.String)</td>
+              <td>34</td>
+              <td class="duration" data-value="7091526205">7.091</td>
+              <td class="duration" data-value="7091526205">10.751</td>
+              <td class="duration" data-value="241111891000">4:1.111</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.goToShopping()</td>
+              <td>39</td>
+              <td class="duration" data-value="23283615692">23.283</td>
+              <td class="duration" data-value="23283615692">23.960</td>
+              <td class="duration" data-value="908061012000">15:8.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.goToShoppingScreen()</td>
+              <td>34</td>
+              <td class="duration" data-value="17197014235">17.197</td>
+              <td class="duration" data-value="17197014235">24.982</td>
+              <td class="duration" data-value="584698484000">9:44.698</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.navigateToShopTrendingProduct()</td>
+              <td>1</td>
+              <td class="duration" data-value="20030116000">20.030</td>
+              <td class="duration" data-value="20030116000">20.030</td>
+              <td class="duration" data-value="20030116000">20.030</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.openNotification(java.lang.String)</td>
+              <td>42</td>
+              <td class="duration" data-value="10916597476">10.916</td>
+              <td class="duration" data-value="10916597476">14.050</td>
+              <td class="duration" data-value="458497094000">7:38.497</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.pressMoreButtonTrending(java.lang.String)</td>
+              <td>36</td>
+              <td class="duration" data-value="19677123416">19.677</td>
+              <td class="duration" data-value="19677123416">24.788</td>
+              <td class="duration" data-value="708376443000">11:48.376</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.pressMoreButtonViewRecent()</td>
+              <td>1</td>
+              <td class="duration" data-value="11110788000">11.110</td>
+              <td class="duration" data-value="11110788000">11.110</td>
+              <td class="duration" data-value="11110788000">11.110</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.pressNotContainsText(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="25866031000">25.866</td>
+              <td class="duration" data-value="25866031000">25.866</td>
+              <td class="duration" data-value="25866031000">25.866</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.submitTransWithNetwork(java.lang.String,java.lang.String)</td>
+              <td>21</td>
+              <td class="duration" data-value="3767267190">3.767</td>
+              <td class="duration" data-value="3767267190">6.473</td>
+              <td class="duration" data-value="79112611000">1:19.112</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.submitTransWithStatus(java.lang.String)</td>
+              <td>17</td>
+              <td class="duration" data-value="3972804411">3.972</td>
+              <td class="duration" data-value="3972804411">5.324</td>
+              <td class="duration" data-value="67537675000">1:7.537</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.verifyRecentViewed()</td>
+              <td>1</td>
+              <td class="duration" data-value="7062771000">7.062</td>
+              <td class="duration" data-value="7062771000">7.062</td>
+              <td class="duration" data-value="7062771000">7.062</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.ShoppingPageSteps.verifyWebView()</td>
+              <td>2</td>
+              <td class="duration" data-value="5936241500">5.936</td>
+              <td class="duration" data-value="5936241500">10.409</td>
+              <td class="duration" data-value="11872483000">11.872</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.VerifySteps.tapOnElement(java.lang.String,java.lang.String)</td>
+              <td>8</td>
+              <td class="duration" data-value="4294898000">4.294</td>
+              <td class="duration" data-value="4294898000">12.132</td>
+              <td class="duration" data-value="34359184000">34.359</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.VerifySteps.tapOnText(java.lang.String)</td>
+              <td>10</td>
+              <td class="duration" data-value="16545056800">16.545</td>
+              <td class="duration" data-value="16545056800">25.485</td>
+              <td class="duration" data-value="165450568000">2:45.450</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.VerifySteps.verifyNearbyElement(java.lang.String,java.util.List&lt;java.lang.String&gt;)</td>
+              <td>2</td>
+              <td class="duration" data-value="24265565500">24.265</td>
+              <td class="duration" data-value="24265565500">27.257</td>
+              <td class="duration" data-value="48531131000">48.531</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.VerifySteps.verifyScreen(java.lang.String,java.util.List&lt;java.lang.String&gt;)</td>
+              <td>9</td>
+              <td class="duration" data-value="43494695666">43.494</td>
+              <td class="duration" data-value="43494695666">2:10.747</td>
+              <td class="duration" data-value="391452261000">6:31.452</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.enterAmount(java.lang.String)</td>
+              <td>11</td>
+              <td class="duration" data-value="8734816181">8.734</td>
+              <td class="duration" data-value="8734816181">9.228</td>
+              <td class="duration" data-value="96082978000">1:36.082</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.enterAuthenticate(java.lang.String)</td>
+              <td>14</td>
+              <td class="duration" data-value="7494436642">7.494</td>
+              <td class="duration" data-value="7494436642">7.927</td>
+              <td class="duration" data-value="104922113000">1:44.922</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.enterPass(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="105000">0.000</td>
+              <td class="duration" data-value="105000">0.000</td>
+              <td class="duration" data-value="105000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.navigateAssetPage()</td>
+              <td>14</td>
+              <td class="duration" data-value="23322627214">23.322</td>
+              <td class="duration" data-value="23322627214">24.435</td>
+              <td class="duration" data-value="326516781000">5:26.516</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.pressWithdrawGuaranteed()</td>
+              <td>6</td>
+              <td class="duration" data-value="5123239833">5.123</td>
+              <td class="duration" data-value="5123239833">5.390</td>
+              <td class="duration" data-value="30739439000">30.739</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.pressWithdrawMarket()</td>
+              <td>8</td>
+              <td class="duration" data-value="5127709000">5.127</td>
+              <td class="duration" data-value="5127709000">5.283</td>
+              <td class="duration" data-value="41021672000">41.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.submitWithdraw(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="43409033000">43.409</td>
+              <td class="duration" data-value="43409033000">43.409</td>
+              <td class="duration" data-value="43409033000">43.409</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.verify()</td>
+              <td>1</td>
+              <td class="duration" data-value="24000">0.000</td>
+              <td class="duration" data-value="24000">0.000</td>
+              <td class="duration" data-value="24000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.verifyError(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="31631709000">31.631</td>
+              <td class="duration" data-value="31631709000">31.631</td>
+              <td class="duration" data-value="31631709000">31.631</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.verifyMessage(java.lang.String)</td>
+              <td>10</td>
+              <td class="duration" data-value="1939841700">1.939</td>
+              <td class="duration" data-value="1939841700">2.095</td>
+              <td class="duration" data-value="19398417000">19.398</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.qa.stepdef.WithdrawalSGSteps.verifyMessageInvalidPass(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="3242487000">3.242</td>
+              <td class="duration" data-value="3242487000">4.044</td>
+              <td class="duration" data-value="6484974000">6.484</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>49</td>
+            <td>503</td>
+            <td class="duration">10.966</td>
+            <td class="duration">15:8.061</td>
+            <td class="duration">1:31:56.261</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
