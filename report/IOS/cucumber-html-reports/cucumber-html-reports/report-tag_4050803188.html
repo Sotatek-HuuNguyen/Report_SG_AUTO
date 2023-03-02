@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>23 Feb 2023, 15:54</td>
+      <td>02 Mar 2023, 16:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@NotDummy</td>
-          <td      class="passed"    >4</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="72910847000">1:12.910</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="53153359000">53.153</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:12.910</span>
+  <span class="lead-duration duration">53.153</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Shopping in shopping stores not dummy</span>
 
@@ -199,7 +199,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -238,9 +238,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -258,7 +258,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">23.691</span>
+  <span class="lead-duration duration">23.656</span>
 
 </div>
 
@@ -285,7 +285,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press more button in <span class="argument">&quot;Trending Stores&quot;</span> in iOS devices</span>
 
-  <span class="lead-duration duration">24.900</span>
+  <span class="lead-duration duration">24.920</span>
 
 </div>
 
@@ -308,11 +308,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">I press stores not have <span class="argument">&quot;dummy&quot;</span> in shop name</span>
 
-  <span class="lead-duration duration">21.759</span>
+  <span class="lead-duration duration">4.576</span>
 
 </div>
 
@@ -320,6 +320,24 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.IllegalArgumentException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.IllegalArgumentException: bound must be greater than origin
+	at java.base/java.util.concurrent.ThreadLocalRandom.nextInt(ThreadLocalRandom.java:337)
+	at com.qa.utils.RandomUtil.getRandomNumber(RandomUtil.java:18)
+	at com.qa.pages.BasePage.findElementNotContainText(BasePage.java:454)
+	at com.qa.pages.ShoppingPage.selectNotContainsShop(ShoppingPage.java:257)
+	at com.qa.stepdef.ShoppingPageSteps.pressNotContainsText(ShoppingPageSteps.java:98)
+	at &#10045;.I press stores not have &quot;dummy&quot; in shop name(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ShoppingDummyInTrendingStores.feature:71)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -335,11 +353,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Web view of products must display</span>
 
-  <span class="lead-duration duration">2.559</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -366,7 +384,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -378,13 +396,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.516</span>
+  <span class="lead-duration duration">3.507</span>
 
           </div>
 
@@ -395,15 +413,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Shopping in shopping stores not dummy</a>
-      <a href="embeddings/embedding_-1255007139.png" download target="_blank">
+      <a href="embeddings/embedding_60071160.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
+    <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1255007139.png">
+        <img src="embeddings/embedding_60071160.png">
       </div>
     </div>
   </div>
