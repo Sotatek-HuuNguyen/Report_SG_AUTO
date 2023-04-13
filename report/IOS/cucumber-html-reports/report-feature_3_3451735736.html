@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>06 Apr 2023, 15:03</td>
+      <td>13 Apr 2023, 15:20</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Verify in Onboard page</td>
-          <td      class="passed"    >16</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >8</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">16</td>
 
-          <td  class="passed"    >2</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="102396457000">1:42.396</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="94602714000">1:34.602</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Verify in Onboard page</span>
 
@@ -194,12 +194,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">52.704</span>
+  <span class="lead-duration duration">44.491</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify text in Onboarding page</span>
 
@@ -210,7 +210,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -249,9 +249,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -261,7 +261,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -269,7 +269,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Account&quot;</span> icon</span>
 
-  <span class="lead-duration duration">15.603</span>
+  <span class="lead-duration duration">16.575</span>
 
 </div>
 
@@ -292,11 +292,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;How To Use This App&quot;</span> in screen <span class="argument">&quot;Account&quot;</span></span>
 
-  <span class="lead-duration duration">27.487</span>
+  <span class="lead-duration duration">27.915</span>
 
 </div>
 
@@ -304,6 +304,54 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
+Session ID: 2fdb9f57-f0c9-4196-ae90-cfcda20118e5
+*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name=&quot;How To Use This App&quot;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor56.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:600)
+	at com.qa.stepdef.VerifySteps.tapOnElement(VerifySteps.java:64)
+	at &#10045;.I tap on &quot;How To Use This App&quot; in screen &quot;Account&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/Onboarding.feature:6)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -319,11 +367,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Shop-to-Earn Free Rewards&quot;</span></span>
 
-  <span class="lead-duration duration">2.554</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -346,11 +394,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I swipe <span class="argument">&quot;right&quot;</span></span>
 
-  <span class="lead-duration duration">1.157</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -373,11 +421,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Grow Your Assets&quot;</span></span>
 
-  <span class="lead-duration duration">1.012</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -400,11 +448,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I swipe <span class="argument">&quot;right&quot;</span></span>
 
-  <span class="lead-duration duration">1.139</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -427,11 +475,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Stay Updated to Gain More&quot;</span></span>
 
-  <span class="lead-duration duration">1.142</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -454,11 +502,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I swipe <span class="argument">&quot;right&quot;</span></span>
 
-  <span class="lead-duration duration">1.156</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -481,11 +529,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Find Your Favorite Stores&quot;</span></span>
 
-  <span class="lead-duration duration">1.449</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -512,7 +560,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -524,13 +572,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.625</span>
+  <span class="lead-duration duration">3.622</span>
 
           </div>
 
@@ -541,15 +589,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Verify text in Onboarding page</a>
-      <a href="embeddings/embedding_-250341001.png" download target="_blank">
+      <a href="embeddings/embedding_520163832.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
+    <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-250341001.png">
+        <img src="embeddings/embedding_520163832.png">
       </div>
     </div>
   </div>
@@ -575,10 +623,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">49.692</span>
+  <span class="lead-duration duration">50.111</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -591,11 +639,11 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -607,7 +655,7 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="before-7" class="inner-level collapse collapsable-details ">
+    <div id="before-8" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -630,7 +678,7 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -642,7 +690,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-8" class="inner-level collapse collapsable-details ">
+  <div id="steps-9" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -650,7 +698,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Account&quot;</span> icon</span>
 
-  <span class="lead-duration duration">15.687</span>
+  <span class="lead-duration duration">16.106</span>
 
 </div>
 
@@ -677,7 +725,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;How To Use This App&quot;</span> in screen <span class="argument">&quot;Account&quot;</span></span>
 
-  <span class="lead-duration duration">27.669</span>
+  <span class="lead-duration duration">28.162</span>
 
 </div>
 
@@ -704,7 +752,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Shop-to-Earn Free Rewards&quot;</span></span>
 
-  <span class="lead-duration duration">1.881</span>
+  <span class="lead-duration duration">1.459</span>
 
 </div>
 
@@ -731,7 +779,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I swipe <span class="argument">&quot;right&quot;</span></span>
 
-  <span class="lead-duration duration">1.185</span>
+  <span class="lead-duration duration">1.140</span>
 
 </div>
 
@@ -758,7 +806,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Grow Your Assets&quot;</span></span>
 
-  <span class="lead-duration duration">1.026</span>
+  <span class="lead-duration duration">1.088</span>
 
 </div>
 
@@ -785,7 +833,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I swipe <span class="argument">&quot;left&quot;</span></span>
 
-  <span class="lead-duration duration">1.156</span>
+  <span class="lead-duration duration">1.143</span>
 
 </div>
 
@@ -812,7 +860,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I verify text in onboard must display with text <span class="argument">&quot;Shop-to-Earn Free Rewards&quot;</span></span>
 
-  <span class="lead-duration duration">1.084</span>
+  <span class="lead-duration duration">1.009</span>
 
 </div>
 
@@ -839,7 +887,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -851,13 +899,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-9" class="inner-level collapse collapsable-details ">
+    <div id="after-10" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.563</span>
+  <span class="lead-duration duration">3.511</span>
 
           </div>
 
@@ -868,15 +916,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
       <a>Verify text in Onboarding page</a>
-      <a href="embeddings/embedding_-375181743.png" download target="_blank">
+      <a href="embeddings/embedding_-1504037453.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-10" class="collapse collapsable-details ">
+    <div id="embedding-11" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-375181743.png">
+        <img src="embeddings/embedding_-1504037453.png">
       </div>
     </div>
   </div>
