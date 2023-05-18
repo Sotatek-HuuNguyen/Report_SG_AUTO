@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>11 May 2023, 16:53</td>
+      <td>18 May 2023, 15:53</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Change Region Shopping</td>
-          <td      class="passed"    >6</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >7</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="123988963000">2:3.988</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="128135079000">2:8.135</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Change Region Shopping</span>
 
@@ -192,12 +192,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2:3.988</span>
+  <span class="lead-duration duration">2:8.135</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Change region to shopping</span>
 
@@ -208,7 +208,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -247,9 +247,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -267,7 +267,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">9.945</span>
+  <span class="lead-duration duration">10.902</span>
 
 </div>
 
@@ -294,7 +294,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to <span class="argument">&quot;Shopping Region&quot;</span></span>
 
-  <span class="lead-duration duration">6.241</span>
+  <span class="lead-duration duration">7.461</span>
 
 </div>
 
@@ -321,7 +321,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter <span class="argument">&quot;Vietnam&quot;</span> region to input search box</span>
 
-  <span class="lead-duration duration">1:1.145</span>
+  <span class="lead-duration duration">1:2.292</span>
 
 </div>
 
@@ -348,7 +348,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to <span class="argument">&quot;Vietnam&quot;</span></span>
 
-  <span class="lead-duration duration">13.891</span>
+  <span class="lead-duration duration">13.992</span>
 
 </div>
 
@@ -375,7 +375,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">10.177</span>
+  <span class="lead-duration duration">9.436</span>
 
 </div>
 
@@ -402,7 +402,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I click in search input</span>
 
-  <span class="lead-duration duration">17.175</span>
+  <span class="lead-duration duration">18.100</span>
 
 </div>
 
@@ -425,11 +425,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Total in <span class="argument">&quot;Vietnam&quot;</span> stores must display match pattern <span class="argument">&quot;[\d+\,]+ stores in %s&quot;</span></span>
 
-  <span class="lead-duration duration">5.412</span>
+  <span class="lead-duration duration">5.949</span>
 
 </div>
 
@@ -437,24 +437,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at com.qa.stepdef.SearchSteps.verifyTotalStores(SearchSteps.java:14)
-	at &#10045;.Total in &quot;Vietnam&quot; stores must display match pattern &quot;[\d+\,]+ stores in %s&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/Region.feature:11)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -474,7 +456,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -486,13 +468,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.624</span>
+  <span class="lead-duration duration">3.517</span>
 
           </div>
 
@@ -503,15 +485,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Change region to shopping</a>
-      <a href="embeddings/embedding_-1832159227.png" download target="_blank">
+      <a href="embeddings/embedding_1221345977.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
+    <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1832159227.png">
+        <img src="embeddings/embedding_1221345977.png">
       </div>
     </div>
   </div>
