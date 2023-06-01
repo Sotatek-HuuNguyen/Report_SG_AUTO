@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>25 May 2023, 10:07</td>
+      <td>01 Jun 2023, 14:31</td>
     </tr>
   </tbody>
 </table>
@@ -115,7 +115,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1_1588215823.html">Verify Assets Screen</a>
+      <a href="report-feature_2_594720876.html">Categories tab in shopping screen</a>
     </div>
 
 
@@ -125,14 +125,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">39.956</span>
+  <span class="lead-duration duration">4:18.967</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Asset Screen</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify shopping from Categories tab</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -196,11 +196,173 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Verify Asset Screen Android</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I tap on <span class="argument">&quot;Shopping&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">39.956</span>
+  <span class="lead-duration duration">2.603</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I swipe <span class="argument">&quot;left&quot;</span> to <span class="argument">&quot;Home Decor &amp; Furniture&quot;</span> categories</span>
+
+  <span class="lead-duration duration">1.399</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap on <span class="argument">&quot;Home Decor &amp; Furniture&quot;</span> in screen <span class="argument">&quot;Shopping&quot;</span> only devices Android</span>
+
+  <span class="lead-duration duration">0.697</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to shop have contains <span class="argument">&quot;dummy&quot;</span> in categories</span>
+
+  <span class="lead-duration duration">3.877</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to screen shopping and get transId success</span>
+
+  <span class="lead-duration duration">6.638</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">3.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">4:0.741</span>
 
 </div>
 
@@ -215,21 +377,22 @@ $(document).ready(function() {
           <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[contains(@text, 'Total SG')] (tried for 20 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[(@resource-id=&quot;com.android.systemui:id/big_text&quot; or @resource-id=&quot;android:id/text&quot;)and contains(@text,&quot;eBay Andrew test dummy long name test long name test long name test long name test long name test long name test&quot;)] (tried for 240 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyAssetScreenAndroid(VerifySteps.java:246)
-	at &#10045;.Verify Asset Screen Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/AssetScreen.feature:5)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:107)
+	at com.qa.pages.ShoppingPage.getTextFromPushNotification(ShoppingPage.java:432)
+	at com.qa.stepdef.ShoppingPageSteps.openNotification(ShoppingPageSteps.java:171)
+	at &#10045;.Notification must display and I open push notification with status shopping &quot;approved&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/CategoriesTab.feature:11)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[contains(@text, 'Total SG')]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 16eb1cb1-d646-4bca-9a87-afa76da952c3
+*** Element info: {Using=xpath, value=//*[(@resource-id=&quot;com.android.systemui:id/big_text&quot; or @resource-id=&quot;android:id/text&quot;)and contains(@text,&quot;eBay Andrew test dummy long name test long name test long name test long name test long name test long name test&quot;)]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor66.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -255,11 +418,12 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyAssetScreenAndroid(VerifySteps.java:246)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:107)
+	at com.qa.pages.ShoppingPage.getTextFromPushNotification(ShoppingPage.java:432)
+	at com.qa.stepdef.ShoppingPageSteps.openNotification(ShoppingPageSteps.java:171)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -282,8 +446,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at jdk.internal.reflect.GeneratedMethodAccessor184.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -311,23 +474,6 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </div>
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Total SG</td>
-              </tr>
-              <tr>
-                  <td>Approved SG</td>
-              </tr>
-              <tr>
-                  <td>Pending SG</td>
-              </tr>
-              <tr>
-                  <td>FAQ About This Screen</td>
-              </tr>
-              <tr>
-                  <td>Withdraw SG</td>
-              </tr>
-          </table>
 
 
 
@@ -363,7 +509,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.240</span>
+  <span class="lead-duration duration">1.694</span>
 
           </div>
 
@@ -375,14 +521,14 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>Verify Asset Screen</a>
-      <a href="embeddings/embedding_-2027369265.png" download target="_blank">
+      <a>Verify shopping from Categories tab</a>
+      <a href="embeddings/embedding_1575822387.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2027369265.png">
+        <img src="embeddings/embedding_1575822387.png">
       </div>
     </div>
   </div>
@@ -399,25 +545,24 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_8_2404882992.html">Shopping Trending Product Flow Test</a>
+      <a href="report-feature_2_594720876.html">Categories tab in shopping screen</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_2821457422.html">@Android</a>
 </div>
 
 
-  <span class="lead-duration duration">40.169</span>
+  <span class="lead-duration duration">4:31.978</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify Shopping Screen</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify shopping from Categories tab</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -481,11 +626,173 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
       <div class="step">
 
 
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">Verify Shopping Screen Android</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I tap on <span class="argument">&quot;Shopping&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">40.169</span>
+  <span class="lead-duration duration">12.973</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I swipe <span class="argument">&quot;left&quot;</span> to <span class="argument">&quot;Travel &amp; Vacations&quot;</span> categories</span>
+
+  <span class="lead-duration duration">6.141</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap on <span class="argument">&quot;Travel &amp; Vacations&quot;</span> in screen <span class="argument">&quot;Shopping&quot;</span> only devices Android</span>
+
+  <span class="lead-duration duration">0.605</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to shop have contains <span class="argument">&quot;dummy&quot;</span> in categories</span>
+
+  <span class="lead-duration duration">3.289</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to screen shopping and get transId success</span>
+
+  <span class="lead-duration duration">6.731</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">1.821</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">4:0.415</span>
 
 </div>
 
@@ -500,21 +807,22 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
           <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[contains(@text, 'Trending')] (tried for 20 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[(@resource-id=&quot;com.android.systemui:id/big_text&quot; or @resource-id=&quot;android:id/text&quot;)and contains(@text,&quot;eBay Andrew test dummy long name test long name test long name test long name test long name test long name test&quot;)] (tried for 240 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyShoppingScreen(VerifySteps.java:237)
-	at &#10045;.Verify Shopping Screen Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/ShoppingInTrendingProduct.feature:6)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:107)
+	at com.qa.pages.ShoppingPage.getTextFromPushNotification(ShoppingPage.java:432)
+	at com.qa.stepdef.ShoppingPageSteps.openNotification(ShoppingPageSteps.java:171)
+	at &#10045;.Notification must display and I open push notification with status shopping &quot;approved&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/CategoriesTab.feature:11)
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[contains(@text, 'Trending')]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
+Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 16eb1cb1-d646-4bca-9a87-afa76da952c3
+*** Element info: {Using=xpath, value=//*[(@resource-id=&quot;com.android.systemui:id/big_text&quot; or @resource-id=&quot;android:id/text&quot;)and contains(@text,&quot;eBay Andrew test dummy long name test long name test long name test long name test long name test long name test&quot;)]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor66.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -540,11 +848,12 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyShoppingScreen(VerifySteps.java:237)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:107)
+	at com.qa.pages.ShoppingPage.getTextFromPushNotification(ShoppingPage.java:432)
+	at com.qa.stepdef.ShoppingPageSteps.openNotification(ShoppingPageSteps.java:171)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -567,7 +876,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor184.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -595,17 +904,6 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </div>
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Trending</td>
-              </tr>
-              <tr>
-                  <td>Great Deals</td>
-              </tr>
-              <tr>
-                  <td>History</td>
-              </tr>
-          </table>
 
 
 
@@ -641,7 +939,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.789</span>
+  <span class="lead-duration duration">1.632</span>
 
           </div>
 
@@ -653,14 +951,14 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
-      <a>Verify Shopping Screen</a>
-      <a href="embeddings/embedding_136105405.png" download target="_blank">
+      <a>Verify shopping from Categories tab</a>
+      <a href="embeddings/embedding_1084472818.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-12" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_136105405.png">
+        <img src="embeddings/embedding_1084472818.png">
       </div>
     </div>
   </div>
@@ -677,7 +975,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_9_2838870690.html">Shopping Trending Stores Flow  Test</a>
+      <a href="report-feature_8_2838870690.html">Shopping Trending Stores Flow  Test</a>
     </div>
 
 
@@ -685,18 +983,18 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
     <b>Tags:</b>
        <a href="report-tag_2821457422.html">@Android</a>
        <a href="report-tag_162697622.html">@TrendingStores</a>
-       <a href="report-tag_2232721692.html">@TestAndroid</a>
+       <a href="report-tag_3000260918.html">@Pending</a>
 </div>
 
 
-  <span class="lead-duration duration">4:17.161</span>
+  <span class="lead-duration duration">0.619</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Shopping with shop not contains Dummy</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify status &quot;approved&quot; &amp; shop name in detail push notification</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -760,92 +1058,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">5.278</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Choose Shop not contains <span class="argument">&quot;dummy&quot;</span></span>
-
-  <span class="lead-duration duration">3.303</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click button ShopNow and Got it</span>
-
-  <span class="lead-duration duration">4.251</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Verify webview Displayed</span>
-
-  <span class="lead-duration duration">4:4.327</span>
+  <span class="lead-duration duration">0.619</span>
 
 </div>
 
@@ -857,19 +1074,40 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-16">
-          <a>org.openqa.selenium.TimeoutException:</a>
+          <a>org.openqa.selenium.StaleElementReferenceException:</a>
       </div>
       <div id="msg-16" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.ListView/android.view.View}) (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
-	at com.qa.pages.ShoppingPage.verifyWebViewDisplayed(ShoppingPage.java:639)
-	at com.qa.stepdef.ShoppingPageSteps.verifyWebviewDisplayed(ShoppingPageSteps.java:294)
-	at &#10045;.Verify webview Displayed(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/ShoppingInTrendingStore.feature:100)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.ListView/android.view.View})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+        <pre>org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.TextView[contains(@text,&quot;Trending&quot;)]/following-sibling::android.widget.TextView[contains(@text,&quot;See More&quot;)]' does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 16eb1cb1-d646-4bca-9a87-afa76da952c3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor117.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
@@ -877,82 +1115,121 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
-	at com.qa.pages.ShoppingPage.verifyWebViewDisplayed(ShoppingPage.java:639)
-	at com.qa.stepdef.ShoppingPageSteps.verifyWebviewDisplayed(ShoppingPageSteps.java:294)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@12d9f4c9 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 54 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.ListView/android.view.View})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 56 more
+	at com.qa.pages.ShoppingPage.pressMoreTrendingStoreBtn(ShoppingPage.java:338)
+	at com.qa.stepdef.ShoppingPageSteps.clickMoreOfTrendingStores(ShoppingPageSteps.java:258)
+	at &#10045;.Click More of Trending Stores(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/ShoppingInTrendingStore.feature:6)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to screen shopping and get transId success</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -990,7 +1267,7 @@ Driver info: driver.version: AndroidDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.100</span>
+  <span class="lead-duration duration">1.158</span>
 
           </div>
 
@@ -1002,14 +1279,14 @@ Driver info: driver.version: AndroidDriver
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-18" class="collapsable-control">
-      <a>Shopping with shop not contains Dummy</a>
-      <a href="embeddings/embedding_-1317734497.png" download target="_blank">
+      <a>Verify status &quot;approved&quot; &amp; shop name in detail push notification</a>
+      <a href="embeddings/embedding_1309532441.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-18" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1317734497.png">
+        <img src="embeddings/embedding_1309532441.png">
       </div>
     </div>
   </div>
@@ -1026,24 +1303,26 @@ Driver info: driver.version: AndroidDriver
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_12_2640840108.html">Web view Flow Test</a>
+      <a href="report-feature_8_2838870690.html">Shopping Trending Stores Flow  Test</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2821457422.html">@Android</a>
+       <a href="report-tag_162697622.html">@TrendingStores</a>
+       <a href="report-tag_2232721692.html">@TestAndroid</a>
 </div>
 
 
-  <span class="lead-duration duration">20:1.386</span>
+  <span class="lead-duration duration">4:16.001</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Invalid Password</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Shopping with shop not contains Dummy</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1109,9 +1388,9 @@ Driver info: driver.version: AndroidDriver
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I go to Asset Page</span>
+  <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">4.718</span>
+  <span class="lead-duration duration">4.900</span>
 
 </div>
 
@@ -1134,11 +1413,65 @@ Driver info: driver.version: AndroidDriver
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I press to Withdraw SG</span>
+  <span class="name">Choose Shop not contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">19:56.668</span>
+  <span class="lead-duration duration">2.580</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click button ShopNow and Got it</span>
+
+  <span class="lead-duration duration">4.101</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Verify webview Displayed</span>
+
+  <span class="lead-duration duration">4:4.419</span>
 
 </div>
 
@@ -1150,149 +1483,102 @@ Driver info: driver.version: AndroidDriver
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
-          <a>org.openqa.selenium.InvalidElementStateException:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-22" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.InvalidElementStateException: Drag from [x=540.0, y=1536.0] to [x=540.0, y=384.0] did not complete successfully
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //android.widget.ListView/android.view.View}) (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.ShoppingPage.verifyWebViewDisplayed(ShoppingPage.java:655)
+	at com.qa.stepdef.ShoppingPageSteps.verifyWebviewDisplayed(ShoppingPageSteps.java:299)
+	at &#10045;.Verify webview Displayed(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/ShoppingInTrendingStore.feature:100)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.ListView/android.view.View})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.ShoppingPage.verifyWebViewDisplayed(ShoppingPage.java:655)
+	at com.qa.stepdef.ShoppingPageSteps.verifyWebviewDisplayed(ShoppingPageSteps.java:299)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
+	at jdk.internal.reflect.GeneratedMethodAccessor184.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1f9af186 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 54 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.ListView/android.view.View})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at io.appium.java_client.PerformsTouchActions.performTouchAction(PerformsTouchActions.java:41)
-	at io.appium.java_client.TouchAction.perform(TouchAction.java:187)
-	at com.qa.pages.BasePage.swipe(BasePage.java:398)
-	at com.qa.pages.BasePage.swipeUpDown(BasePage.java:408)
-	at com.qa.pages.BasePage.scrollToElement(BasePage.java:441)
-	at com.qa.pages.AssetsPage.clickWithdrawalSG(AssetsPage.java:97)
-	at com.qa.stepdef.WithdrawalSGSteps.pressWithdrawSG(WithdrawalSGSteps.java:48)
-	at &#10045;.I press to Withdraw SG(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WebView.feature:6)
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 56 more
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to Continue button</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I press type of withdrawal Priority Pass</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter authenticate password <span class="argument">&quot;15252353&quot;</span> to navigate withdraw SG</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Message incorrect password must display with message <span class="argument">&quot;Incorrect password&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -1330,7 +1616,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.172</span>
+  <span class="lead-duration duration">1.397</span>
 
           </div>
 
@@ -1342,14 +1628,14 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
-      <a>Invalid Password</a>
-      <a href="embeddings/embedding_-1796847307.png" download target="_blank">
+      <a>Shopping with shop not contains Dummy</a>
+      <a href="embeddings/embedding_453230923.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-24" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1796847307.png">
+        <img src="embeddings/embedding_453230923.png">
       </div>
     </div>
   </div>
@@ -1374,19 +1660,20 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
     <b>Tags:</b>
        <a href="report-tag_2821457422.html">@Android</a>
        <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_4046142535.html">@Dummy</a>
-       <a href="report-tag_2200784819.html">@TrendingStoreNone</a>
+       <a href="report-tag_918541144.html">@NotActive</a>
+       <a href="report-tag_2154698183.html">@Shopping</a>
+       <a href="report-tag_3000260918.html">@Pending</a>
 </div>
 
 
-  <span class="lead-duration duration">1:6.652</span>
+  <span class="lead-duration duration">2.810</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Shopping to Active Member screen</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">None user can shopping purchase with network &quot;cuelinks&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1450,65 +1737,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">4.306</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
-
-  <span class="lead-duration duration">2.204</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Shop as a Member</span>
-
-  <span class="lead-duration duration">1:0.141</span>
+  <span class="lead-duration duration">2.810</span>
 
 </div>
 
@@ -1520,102 +1753,50 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
-          <a>org.openqa.selenium.TimeoutException:</a>
+          <a>org.openqa.selenium.StaleElementReferenceException:</a>
       </div>
       <div id="msg-28" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({By.id: com.socialgood_foundation.sg_app_android_dev:id/btShopAsMember}) (tried for 60 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:367)
-	at com.qa.pages.BasePage.click(BasePage.java:116)
-	at com.qa.pages.ShoppingPage.clickToShopAsMember(ShoppingPage.java:393)
-	at com.qa.stepdef.ShoppingPageSteps.shopAsMember(ShoppingPageSteps.java:143)
-	at &#10045;.Shop as a Member(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WithNoneUser.feature:65)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.id: com.socialgood_foundation.sg_app_android_dev:id/btShopAsMember})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+        <pre>org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //android.widget.TextView[contains(@text,&quot;Trending&quot;)]/following-sibling::android.widget.TextView[contains(@text,&quot;See More&quot;)]' is not linked to the same object in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 16eb1cb1-d646-4bca-9a87-afa76da952c3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
+	at jdk.internal.reflect.GeneratedMethodAccessor117.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
 	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
 	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:367)
-	at com.qa.pages.BasePage.click(BasePage.java:116)
-	at com.qa.pages.ShoppingPage.clickToShopAsMember(ShoppingPage.java:393)
-	at com.qa.stepdef.ShoppingPageSteps.shopAsMember(ShoppingPageSteps.java:143)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1124041b (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 57 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.id: com.socialgood_foundation.sg_app_android_dev:id/btShopAsMember})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 59 more
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.ShoppingPage.pressMoreTrendingStoreBtn(ShoppingPage.java:338)
+	at com.qa.stepdef.ShoppingPageSteps.clickMoreOfTrendingStores(ShoppingPageSteps.java:258)
+	at &#10045;.Click More of Trending Stores(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WithNoneUser.feature:31)
 </pre>
       </div>
     </div>
@@ -1635,9 +1816,9 @@ Driver info: driver.version: AndroidDriver
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Shopping&quot;</span> only devices Android</span>
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1649,29 +1830,87 @@ Driver info: driver.version: AndroidDriver
 
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Earn more rewards as a member</td>
-              </tr>
-              <tr>
-                  <td>Just follow the in-app steps to get 200 SG to hold as your Membership Access Pass.</td>
-              </tr>
-              <tr>
-                  <td>Highest Shopping Rewards</td>
-              </tr>
-              <tr>
-                  <td>Up to 15% APY Staking</td>
-              </tr>
-              <tr>
-                  <td>Exclusive Giveaways</td>
-              </tr>
-              <tr>
-                  <td>Members Only Discord Access</td>
-              </tr>
-              <tr>
-                  <td>Pre-Release Updates</td>
-              </tr>
-          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Shop as a Non-Member</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I create transaction shopping via api with <span class="argument">&quot;approved&quot;</span> status and <span class="argument">&quot;cuelinks&quot;</span> network</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -1707,7 +1946,7 @@ Driver info: driver.version: AndroidDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.250</span>
+  <span class="lead-duration duration">1.476</span>
 
           </div>
 
@@ -1719,978 +1958,14 @@ Driver info: driver.version: AndroidDriver
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
-      <a>Shopping to Active Member screen</a>
-      <a href="embeddings/embedding_-1373624238.png" download target="_blank">
+      <a>None user can shopping purchase with network &quot;cuelinks&quot;</a>
+      <a href="embeddings/embedding_-418490511.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-30" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1373624238.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_13_4078073860.html">None user not Active</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_4065900696.html">@AccountScreen</a>
-</div>
-
-
-  <span class="lead-duration duration">3.117</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Account to Shopping History to Active Membership</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-31" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-32" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Account&quot;</span> icon only devices Android</span>
-
-  <span class="lead-duration duration">3.117</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-34">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-34" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[@text=&quot;Account&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:624)
-	at com.qa.pages.MenuPage.tapOnAccount(MenuPage.java:91)
-	at com.qa.stepdef.VerifySteps.tapOnTextAndroidDevices(VerifySteps.java:55)
-	at &#10045;.I tap on &quot;Account&quot; icon only devices Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WithNoneUser.feature:93)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I tap on <span class="argument">&quot;Shopping History&quot;</span> in screen <span class="argument">&quot;Account&quot;</span> only devices Android</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I press on Active Membership</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Account&quot;</span> only devices Android</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-          <table class="step-arguments">
-              <tr>
-                  <td>Earn more rewards as a member</td>
-              </tr>
-              <tr>
-                  <td>Just follow the in-app steps to get 200 SG to hold as your Membership Access Pass.</td>
-              </tr>
-              <tr>
-                  <td>Highest Shopping Rewards</td>
-              </tr>
-              <tr>
-                  <td>Up to 15% APY Staking</td>
-              </tr>
-              <tr>
-                  <td>Exclusive Giveaways</td>
-              </tr>
-              <tr>
-                  <td>Members Only Discord Access</td>
-              </tr>
-              <tr>
-                  <td>Pre-Release Updates</td>
-              </tr>
-          </table>
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-35" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">3.399</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
-      <a>Account to Shopping History to Active Membership</a>
-      <a href="embeddings/embedding_-1464967188.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-36" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1464967188.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_13_4078073860.html">None user not Active</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_2626013346.html">@StakingScreen</a>
-</div>
-
-
-  <span class="lead-duration duration">3.030</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-37">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Staking screen to Active Member screen</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-37" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-38" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> icon only devices Android</span>
-
-  <span class="lead-duration duration">3.030</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-40">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-40" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[@text=&quot;Staking&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:624)
-	at com.qa.pages.MenuPage.tapOnStaking(MenuPage.java:86)
-	at com.qa.stepdef.VerifySteps.tapOnTextAndroidDevices(VerifySteps.java:54)
-	at &#10045;.I tap on &quot;Staking&quot; icon only devices Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WithNoneUser.feature:110)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I press on Active Membership</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-          <table class="step-arguments">
-              <tr>
-                  <td>Earn more rewards as a member</td>
-              </tr>
-              <tr>
-                  <td>Just follow the in-app steps to get 200 SG to hold as your Membership Access Pass.</td>
-              </tr>
-              <tr>
-                  <td>Highest Shopping Rewards</td>
-              </tr>
-              <tr>
-                  <td>Up to 15% APY Staking</td>
-              </tr>
-              <tr>
-                  <td>Exclusive Giveaways</td>
-              </tr>
-              <tr>
-                  <td>Members Only Discord Access</td>
-              </tr>
-              <tr>
-                  <td>Pre-Release Updates</td>
-              </tr>
-          </table>
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-41" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">3.417</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-42" class="collapsable-control">
-      <a>Verify Staking screen to Active Member screen</a>
-      <a href="embeddings/embedding_1239414775.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-42" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_1239414775.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_13_4078073860.html">None user not Active</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_2821457422.html">@Android</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_430613275.html">@AssetScreen</a>
-</div>
-
-
-  <span class="lead-duration duration">39.144</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-43">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Assets screen to Active Member screen</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-43" class="collapse collapsable-details  in ">
-
-
-  <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-44">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="before-44" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">Before</span>
-              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-          </div>
-
-
-
-
-
-
-
-        </div>
-    </div>
-  </div>
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-45">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-45" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
-
-  <span class="lead-duration duration">4.282</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I press on Active Membership</span>
-
-  <span class="lead-duration duration">1.478</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
-
-  <span class="lead-duration duration">33.382</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-46">
-          <a>org.openqa.selenium.TimeoutException:</a>
-      </div>
-      <div id="msg-46" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[@text=&quot;Earn more rewards as a member&quot;] (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.pages.AssetsPage.verifyTextFieldDisplay(AssetsPage.java:108)
-	at com.qa.stepdef.VerifySteps.verifyScreenAndroidDevices(VerifySteps.java:151)
-	at &#10045;.All field must display in screen &quot;Assets&quot; only devices Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WithNoneUser.feature:128)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[@text=&quot;Earn more rewards as a member&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.pages.AssetsPage.verifyTextFieldDisplay(AssetsPage.java:108)
-	at com.qa.stepdef.VerifySteps.verifyScreenAndroidDevices(VerifySteps.java:151)
-	at jdk.internal.reflect.GeneratedMethodAccessor318.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor178.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-          <table class="step-arguments">
-              <tr>
-                  <td>Earn more rewards as a member</td>
-              </tr>
-              <tr>
-                  <td>Just follow the in-app steps to get 200 SG to hold as your Membership Access Pass.</td>
-              </tr>
-              <tr>
-                  <td>Highest Shopping Rewards</td>
-              </tr>
-              <tr>
-                  <td>Up to 15% APY Staking</td>
-              </tr>
-              <tr>
-                  <td>Exclusive Giveaways</td>
-              </tr>
-              <tr>
-                  <td>Members Only Discord Access</td>
-              </tr>
-              <tr>
-                  <td>Pre-Release Updates</td>
-              </tr>
-          </table>
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-47">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-47" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">3.404</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-48" class="collapsable-control">
-      <a>Verify Assets screen to Active Member screen</a>
-      <a href="embeddings/embedding_626327726.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-48" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_626327726.png">
+        <img src="embeddings/embedding_-418490511.png">
       </div>
     </div>
   </div>

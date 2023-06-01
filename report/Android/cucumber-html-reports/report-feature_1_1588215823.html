@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>25 May 2023, 10:07</td>
+      <td>01 Jun 2023, 14:31</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Verify Assets Screen</td>
-          <td      class="passed"    >53</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >55</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">54</td>
+          <td >0</td>
+          <td class="total">55</td>
 
-          <td  class="passed"    >13</td>
-          <td  class="failed"    >1</td>
+          <td  class="passed"    >14</td>
+          <td >0</td>
           <td class="total">14</td>
 
-          <td class="duration" data-value="363150677000">6:3.150</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="252529782000">4:12.529</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Verify Assets Screen</span>
 
@@ -191,12 +191,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">39.956</span>
+  <span class="lead-duration duration">18.593</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Verify Asset Screen</span>
 
@@ -207,7 +207,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -246,9 +246,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -258,15 +258,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">Verify Asset Screen Android</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">39.956</span>
+  <span class="lead-duration duration">3.355</span>
 
 </div>
 
@@ -275,106 +275,32 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.TimeoutException:</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //*[contains(@text, 'Total SG')] (tried for 20 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyAssetScreenAndroid(VerifySteps.java:246)
-	at &#10045;.Verify Asset Screen Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/AssetScreen.feature:5)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:1ccd:6c60:a9f1:8418%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Samsung S7, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: ce02160209a7761105}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930S, deviceName: ce02160209a7761105, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: ce02160209a7761105, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 72, systemPort: 10000, takesScreenshot: true, udid: ce02160209a7761105, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
-*** Element info: {Using=xpath, value=//*[contains(@text, 'Total SG')]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor60.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:182)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:179)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.verifyTextIsDisplayed(BasePage.java:640)
-	at com.qa.stepdef.VerifySteps.verifyAssetScreenAndroid(VerifySteps.java:246)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-      </div>
-    </div>
-  </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
+
+  <span class="lead-duration duration">15.237</span>
+
+</div>
+
+
+
+
+
 
 
           <table class="step-arguments">
@@ -411,7 +337,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -423,13 +349,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.240</span>
+  <span class="lead-duration duration">1.437</span>
 
           </div>
 
@@ -440,15 +366,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Verify Asset Screen</a>
-      <a href="embeddings/embedding_-2027369265.png" download target="_blank">
+      <a href="embeddings/embedding_1229973651.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
+    <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2027369265.png">
+        <img src="embeddings/embedding_1229973651.png">
       </div>
     </div>
   </div>
@@ -474,10 +400,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">21.957</span>
+  <span class="lead-duration duration">20.261</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -490,11 +416,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-7" class="collapse collapsable-details ">
+  <div id="element-6" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-7">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -506,7 +432,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-8" class="inner-level collapse collapsable-details ">
+    <div id="before-7" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -529,7 +455,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -541,7 +467,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -549,7 +475,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.350</span>
+  <span class="lead-duration duration">2.428</span>
 
 </div>
 
@@ -576,7 +502,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About This Screen&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.600</span>
+  <span class="lead-duration duration">12.081</span>
 
 </div>
 
@@ -603,7 +529,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;SocialGood Support Team&quot;</span> devices Android</span>
 
-  <span class="lead-duration duration">5.006</span>
+  <span class="lead-duration duration">5.751</span>
 
 </div>
 
@@ -630,7 +556,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-10">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-9">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -642,13 +568,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-10" class="inner-level collapse collapsable-details ">
+    <div id="after-9" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.201</span>
+  <span class="lead-duration duration">1.465</span>
 
           </div>
 
@@ -659,15 +585,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
       <a>Verify FQA Assets screen</a>
-      <a href="embeddings/embedding_327127823.png" download target="_blank">
+      <a href="embeddings/embedding_742276828.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-11" class="collapse collapsable-details ">
+    <div id="embedding-10" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_327127823.png">
+        <img src="embeddings/embedding_742276828.png">
       </div>
     </div>
   </div>
@@ -693,10 +619,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">24.174</span>
+  <span class="lead-duration duration">11.111</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -709,11 +635,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-12" class="collapse collapsable-details ">
+  <div id="element-11" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-13">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-12">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -725,7 +651,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-13" class="inner-level collapse collapsable-details ">
+    <div id="before-12" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -748,7 +674,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -760,7 +686,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-14" class="inner-level collapse collapsable-details ">
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -768,7 +694,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.514</span>
+  <span class="lead-duration duration">3.242</span>
 
 </div>
 
@@ -795,7 +721,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Approved SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.753</span>
+  <span class="lead-duration duration">1.554</span>
 
 </div>
 
@@ -822,7 +748,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About Staking&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">1.298</span>
+  <span class="lead-duration duration">1.506</span>
 
 </div>
 
@@ -849,7 +775,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;SocialGood Support Team&quot;</span> devices Android</span>
 
-  <span class="lead-duration duration">5.608</span>
+  <span class="lead-duration duration">4.807</span>
 
 </div>
 
@@ -876,7 +802,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-14">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -888,13 +814,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-15" class="inner-level collapse collapsable-details ">
+    <div id="after-14" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.214</span>
+  <span class="lead-duration duration">1.368</span>
 
           </div>
 
@@ -905,15 +831,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
       <a>Verify FQA About Staking screen</a>
-      <a href="embeddings/embedding_1343802481.png" download target="_blank">
+      <a href="embeddings/embedding_-711890724.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-16" class="collapse collapsable-details ">
+    <div id="embedding-15" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1343802481.png">
+        <img src="embeddings/embedding_-711890724.png">
       </div>
     </div>
   </div>
@@ -939,10 +865,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">26.460</span>
+  <span class="lead-duration duration">21.865</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -955,11 +881,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-17" class="collapse collapsable-details ">
+  <div id="element-16" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-18">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-17">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -971,7 +897,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-18" class="inner-level collapse collapsable-details ">
+    <div id="before-17" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -994,7 +920,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1006,7 +932,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details ">
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1014,7 +940,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">3.845</span>
+  <span class="lead-duration duration">3.177</span>
 
 </div>
 
@@ -1041,7 +967,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Check My Staking Rewards&quot;</span> in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">16.035</span>
+  <span class="lead-duration duration">12.694</span>
 
 </div>
 
@@ -1068,7 +994,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About Staking&quot;</span> in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">1.136</span>
+  <span class="lead-duration duration">0.911</span>
 
 </div>
 
@@ -1095,7 +1021,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;SocialGood Support Team&quot;</span> devices Android</span>
 
-  <span class="lead-duration duration">5.443</span>
+  <span class="lead-duration duration">5.081</span>
 
 </div>
 
@@ -1122,7 +1048,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-20">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-19">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1134,13 +1060,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-20" class="inner-level collapse collapsable-details ">
+    <div id="after-19" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.444</span>
+  <span class="lead-duration duration">1.394</span>
 
           </div>
 
@@ -1151,15 +1077,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
       <a>Verify FQA Assets in Staking page</a>
-      <a href="embeddings/embedding_913205192.png" download target="_blank">
+      <a href="embeddings/embedding_-771242717.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-21" class="collapse collapsable-details ">
+    <div id="embedding-20" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_913205192.png">
+        <img src="embeddings/embedding_-771242717.png">
       </div>
     </div>
   </div>
@@ -1184,10 +1110,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">35.107</span>
+  <span class="lead-duration duration">22.457</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1200,11 +1126,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-22" class="collapse collapsable-details ">
+  <div id="element-21" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-23">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-22">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1216,7 +1142,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-23" class="inner-level collapse collapsable-details ">
+    <div id="before-22" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1239,7 +1165,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-23">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1251,7 +1177,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details ">
+  <div id="steps-23" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1259,7 +1185,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.451</span>
+  <span class="lead-duration duration">3.270</span>
 
 </div>
 
@@ -1286,7 +1212,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Approved SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.437</span>
+  <span class="lead-duration duration">1.532</span>
 
 </div>
 
@@ -1313,7 +1239,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">18.218</span>
+  <span class="lead-duration duration">17.655</span>
 
 </div>
 
@@ -1360,7 +1286,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-25">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-24">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1372,13 +1298,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-25" class="inner-level collapse collapsable-details ">
+    <div id="after-24" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.220</span>
+  <span class="lead-duration duration">1.273</span>
 
           </div>
 
@@ -1389,15 +1315,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-26" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-25" class="collapsable-control">
       <a>Verify Approved SG Assets screen</a>
-      <a href="embeddings/embedding_-1311060382.png" download target="_blank">
+      <a href="embeddings/embedding_-977108584.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-26" class="collapse collapsable-details ">
+    <div id="embedding-25" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1311060382.png">
+        <img src="embeddings/embedding_-977108584.png">
       </div>
     </div>
   </div>
@@ -1422,10 +1348,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">22.264</span>
+  <span class="lead-duration duration">9.982</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1438,11 +1364,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details ">
+  <div id="element-26" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-28">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-27">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1454,7 +1380,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-28" class="inner-level collapse collapsable-details ">
+    <div id="before-27" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1477,7 +1403,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-29">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1489,7 +1415,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-29" class="inner-level collapse collapsable-details ">
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1497,7 +1423,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">3.815</span>
+  <span class="lead-duration duration">2.783</span>
 
 </div>
 
@@ -1524,7 +1450,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Pending SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.461</span>
+  <span class="lead-duration duration">1.674</span>
 
 </div>
 
@@ -1551,7 +1477,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">5.987</span>
+  <span class="lead-duration duration">5.524</span>
 
 </div>
 
@@ -1586,7 +1512,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-30">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1598,13 +1524,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-30" class="inner-level collapse collapsable-details ">
+    <div id="after-29" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.168</span>
+  <span class="lead-duration duration">1.319</span>
 
           </div>
 
@@ -1615,15 +1541,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-31" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
       <a>Verify Pending SG Assets screen</a>
-      <a href="embeddings/embedding_253972472.png" download target="_blank">
+      <a href="embeddings/embedding_47614635.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-31" class="collapse collapsable-details ">
+    <div id="embedding-30" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_253972472.png">
+        <img src="embeddings/embedding_47614635.png">
       </div>
     </div>
   </div>
@@ -1649,10 +1575,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">43.481</span>
+  <span class="lead-duration duration">31.353</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-32">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-31">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1665,11 +1591,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-32" class="collapse collapsable-details ">
+  <div id="element-31" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-33">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-32">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1681,7 +1607,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-33" class="inner-level collapse collapsable-details ">
+    <div id="before-32" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1704,7 +1630,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-34">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-33">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1716,7 +1642,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-34" class="inner-level collapse collapsable-details ">
+  <div id="steps-33" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1724,7 +1650,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.305</span>
+  <span class="lead-duration duration">3.977</span>
 
 </div>
 
@@ -1751,7 +1677,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Approved SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.533</span>
+  <span class="lead-duration duration">1.516</span>
 
 </div>
 
@@ -1778,7 +1704,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">1.194</span>
+  <span class="lead-duration duration">0.901</span>
 
 </div>
 
@@ -1805,7 +1731,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">25.448</span>
+  <span class="lead-duration duration">24.957</span>
 
 </div>
 
@@ -1858,7 +1784,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-35">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1870,13 +1796,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-35" class="inner-level collapse collapsable-details ">
+    <div id="after-34" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.162</span>
+  <span class="lead-duration duration">1.420</span>
 
           </div>
 
@@ -1887,15 +1813,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-35" class="collapsable-control">
       <a>Verify field display in Staking detail screen</a>
-      <a href="embeddings/embedding_453838715.png" download target="_blank">
+      <a href="embeddings/embedding_-1654414309.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-36" class="collapse collapsable-details ">
+    <div id="embedding-35" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_453838715.png">
+        <img src="embeddings/embedding_-1654414309.png">
       </div>
     </div>
   </div>
@@ -1920,10 +1846,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">26.351</span>
+  <span class="lead-duration duration">12.026</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-36">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1936,11 +1862,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-37" class="collapse collapsable-details ">
+  <div id="element-36" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-38">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-37">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1952,7 +1878,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-38" class="inner-level collapse collapsable-details ">
+    <div id="before-37" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -1975,7 +1901,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -1987,7 +1913,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-39" class="inner-level collapse collapsable-details ">
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -1995,7 +1921,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.132</span>
+  <span class="lead-duration duration">2.833</span>
 
 </div>
 
@@ -2022,7 +1948,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Approved SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">12.739</span>
+  <span class="lead-duration duration">1.026</span>
 
 </div>
 
@@ -2049,7 +1975,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">1.163</span>
+  <span class="lead-duration duration">0.911</span>
 
 </div>
 
@@ -2076,7 +2002,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About Staking 2&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">2.537</span>
+  <span class="lead-duration duration">2.493</span>
 
 </div>
 
@@ -2103,7 +2029,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;SocialGood Support Team&quot;</span> devices Android</span>
 
-  <span class="lead-duration duration">5.777</span>
+  <span class="lead-duration duration">4.760</span>
 
 </div>
 
@@ -2130,7 +2056,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-39">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2142,13 +2068,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-40" class="inner-level collapse collapsable-details ">
+    <div id="after-39" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.312</span>
+  <span class="lead-duration duration">1.457</span>
 
           </div>
 
@@ -2159,15 +2085,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-41" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
       <a>Verify FAQ About Staking in Staking Page</a>
-      <a href="embeddings/embedding_-960608694.png" download target="_blank">
+      <a href="embeddings/embedding_-394020891.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-41" class="collapse collapsable-details ">
+    <div id="embedding-40" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-960608694.png">
+        <img src="embeddings/embedding_-394020891.png">
       </div>
     </div>
   </div>
@@ -2192,10 +2118,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">16.955</span>
+  <span class="lead-duration duration">13.159</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-41">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2208,11 +2134,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-42" class="collapse collapsable-details ">
+  <div id="element-41" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-43">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-42">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2224,7 +2150,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-43" class="inner-level collapse collapsable-details ">
+    <div id="before-42" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2247,7 +2173,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2259,7 +2185,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-44" class="inner-level collapse collapsable-details ">
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2267,7 +2193,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">4.799</span>
+  <span class="lead-duration duration">3.453</span>
 
 </div>
 
@@ -2294,7 +2220,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press to Withdraw SG</span>
 
-  <span class="lead-duration duration">3.736</span>
+  <span class="lead-duration duration">3.521</span>
 
 </div>
 
@@ -2321,7 +2247,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Text in Withdrawal Guide must display Android device</span>
 
-  <span class="lead-duration duration">3.172</span>
+  <span class="lead-duration duration">1.225</span>
 
 </div>
 
@@ -2353,7 +2279,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Text in Withdrawal Guide must display Android device</span>
 
-  <span class="lead-duration duration">1.270</span>
+  <span class="lead-duration duration">2.090</span>
 
 </div>
 
@@ -2385,7 +2311,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Text in Withdrawal Guide must display Android device</span>
 
-  <span class="lead-duration duration">1.255</span>
+  <span class="lead-duration duration">0.925</span>
 
 </div>
 
@@ -2417,7 +2343,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Text in Withdrawal Guide must display Android device</span>
 
-  <span class="lead-duration duration">1.388</span>
+  <span class="lead-duration duration">0.774</span>
 
 </div>
 
@@ -2449,7 +2375,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">Text in Withdrawal Guide must display Android device</span>
 
-  <span class="lead-duration duration">1.333</span>
+  <span class="lead-duration duration">1.169</span>
 
 </div>
 
@@ -2481,7 +2407,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2493,13 +2419,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-45" class="inner-level collapse collapsable-details ">
+    <div id="after-44" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.185</span>
+  <span class="lead-duration duration">1.495</span>
 
           </div>
 
@@ -2510,15 +2436,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-46" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
       <a>Verify Asset screen to Active Member screen</a>
-      <a href="embeddings/embedding_-1928996032.png" download target="_blank">
+      <a href="embeddings/embedding_-1192435819.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-46" class="collapse collapsable-details ">
+    <div id="embedding-45" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1928996032.png">
+        <img src="embeddings/embedding_-1192435819.png">
       </div>
     </div>
   </div>
@@ -2541,10 +2467,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">21.344</span>
+  <span class="lead-duration duration">19.400</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2557,11 +2483,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-47" class="collapse collapsable-details ">
+  <div id="element-46" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-48">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-47">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2573,7 +2499,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-48" class="inner-level collapse collapsable-details ">
+    <div id="before-47" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2596,7 +2522,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-49">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2608,7 +2534,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-49" class="inner-level collapse collapsable-details ">
+  <div id="steps-48" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2616,7 +2542,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Staking page</span>
 
-  <span class="lead-duration duration">4.129</span>
+  <span class="lead-duration duration">4.838</span>
 
 </div>
 
@@ -2643,7 +2569,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">Verify Staking screen</span>
 
-  <span class="lead-duration duration">7.431</span>
+  <span class="lead-duration duration">4.742</span>
 
 </div>
 
@@ -2675,7 +2601,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press on text <span class="argument">&quot;Diamond&quot;</span></span>
 
-  <span class="lead-duration duration">0.447</span>
+  <span class="lead-duration duration">0.369</span>
 
 </div>
 
@@ -2702,7 +2628,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">9.335</span>
+  <span class="lead-duration duration">9.450</span>
 
 </div>
 
@@ -2743,7 +2669,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-50">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-49">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2755,13 +2681,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-50" class="inner-level collapse collapsable-details ">
+    <div id="after-49" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.227</span>
+  <span class="lead-duration duration">1.436</span>
 
           </div>
 
@@ -2772,15 +2698,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-51" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-50" class="collapsable-control">
       <a>Verify rank Diamond display must match text</a>
-      <a href="embeddings/embedding_188931968.png" download target="_blank">
+      <a href="embeddings/embedding_-1135815290.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-51" class="collapse collapsable-details ">
+    <div id="embedding-50" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_188931968.png">
+        <img src="embeddings/embedding_-1135815290.png">
       </div>
     </div>
   </div>
@@ -2803,10 +2729,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">21.258</span>
+  <span class="lead-duration duration">19.314</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-52">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-51">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -2819,11 +2745,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-52" class="collapse collapsable-details ">
+  <div id="element-51" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-53">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-52">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2835,7 +2761,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-53" class="inner-level collapse collapsable-details ">
+    <div id="before-52" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -2858,7 +2784,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-54">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-53">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2870,7 +2796,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-54" class="inner-level collapse collapsable-details ">
+  <div id="steps-53" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2878,7 +2804,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Staking page</span>
 
-  <span class="lead-duration duration">4.130</span>
+  <span class="lead-duration duration">3.759</span>
 
 </div>
 
@@ -2905,7 +2831,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">Verify Staking screen</span>
 
-  <span class="lead-duration duration">7.385</span>
+  <span class="lead-duration duration">6.140</span>
 
 </div>
 
@@ -2937,7 +2863,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press on text <span class="argument">&quot;Platinum&quot;</span></span>
 
-  <span class="lead-duration duration">0.394</span>
+  <span class="lead-duration duration">0.349</span>
 
 </div>
 
@@ -2964,7 +2890,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">9.347</span>
+  <span class="lead-duration duration">9.066</span>
 
 </div>
 
@@ -3005,7 +2931,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-55">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3017,13 +2943,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-55" class="inner-level collapse collapsable-details ">
+    <div id="after-54" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.283</span>
+  <span class="lead-duration duration">1.466</span>
 
           </div>
 
@@ -3034,15 +2960,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-56" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-55" class="collapsable-control">
       <a>Verify rank Platinum display must match text</a>
-      <a href="embeddings/embedding_1920308216.png" download target="_blank">
+      <a href="embeddings/embedding_-466536662.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-56" class="collapse collapsable-details ">
+    <div id="embedding-55" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1920308216.png">
+        <img src="embeddings/embedding_-466536662.png">
       </div>
     </div>
   </div>
@@ -3066,10 +2992,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">22.914</span>
+  <span class="lead-duration duration">19.524</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-57">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-56">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -3082,11 +3008,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-57" class="collapse collapsable-details ">
+  <div id="element-56" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-58">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-57">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3098,7 +3024,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-58" class="inner-level collapse collapsable-details ">
+    <div id="before-57" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -3121,7 +3047,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-59">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-58">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3133,7 +3059,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-59" class="inner-level collapse collapsable-details ">
+  <div id="steps-58" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3141,7 +3067,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Staking page</span>
 
-  <span class="lead-duration duration">4.734</span>
+  <span class="lead-duration duration">3.401</span>
 
 </div>
 
@@ -3168,7 +3094,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">Verify Staking screen</span>
 
-  <span class="lead-duration duration">8.326</span>
+  <span class="lead-duration duration">6.013</span>
 
 </div>
 
@@ -3200,7 +3126,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press on text <span class="argument">&quot;Gold&quot;</span></span>
 
-  <span class="lead-duration duration">0.423</span>
+  <span class="lead-duration duration">0.344</span>
 
 </div>
 
@@ -3227,7 +3153,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">9.430</span>
+  <span class="lead-duration duration">9.764</span>
 
 </div>
 
@@ -3268,7 +3194,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-60">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-59">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3280,13 +3206,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-60" class="inner-level collapse collapsable-details ">
+    <div id="after-59" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.360</span>
+  <span class="lead-duration duration">1.475</span>
 
           </div>
 
@@ -3297,15 +3223,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-61" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-60" class="collapsable-control">
       <a>Verify rank Gold display must match text</a>
-      <a href="embeddings/embedding_-2022262969.png" download target="_blank">
+      <a href="embeddings/embedding_-920914574.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-61" class="collapse collapsable-details ">
+    <div id="embedding-60" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2022262969.png">
+        <img src="embeddings/embedding_-920914574.png">
       </div>
     </div>
   </div>
@@ -3328,10 +3254,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">22.495</span>
+  <span class="lead-duration duration">19.212</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-62">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-61">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -3344,11 +3270,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-62" class="collapse collapsable-details ">
+  <div id="element-61" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-63">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-62">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3360,7 +3286,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-63" class="inner-level collapse collapsable-details ">
+    <div id="before-62" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -3383,7 +3309,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-64">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-63">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3395,7 +3321,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-64" class="inner-level collapse collapsable-details ">
+  <div id="steps-63" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3403,7 +3329,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Staking page</span>
 
-  <span class="lead-duration duration">4.155</span>
+  <span class="lead-duration duration">3.925</span>
 
 </div>
 
@@ -3430,7 +3356,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">Verify Staking screen</span>
 
-  <span class="lead-duration duration">8.402</span>
+  <span class="lead-duration duration">5.598</span>
 
 </div>
 
@@ -3462,7 +3388,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press on text <span class="argument">&quot;Silver&quot;</span></span>
 
-  <span class="lead-duration duration">0.486</span>
+  <span class="lead-duration duration">0.352</span>
 
 </div>
 
@@ -3489,7 +3415,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">9.452</span>
+  <span class="lead-duration duration">9.335</span>
 
 </div>
 
@@ -3530,7 +3456,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-65">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-64">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3542,13 +3468,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-65" class="inner-level collapse collapsable-details ">
+    <div id="after-64" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.247</span>
+  <span class="lead-duration duration">1.395</span>
 
           </div>
 
@@ -3559,15 +3485,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-66" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-65" class="collapsable-control">
       <a>Verify rank Silver display must match text</a>
-      <a href="embeddings/embedding_-312769754.png" download target="_blank">
+      <a href="embeddings/embedding_-1719864986.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-66" class="collapse collapsable-details ">
+    <div id="embedding-65" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-312769754.png">
+        <img src="embeddings/embedding_-1719864986.png">
       </div>
     </div>
   </div>
@@ -3590,10 +3516,10 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 </div>
 
 
-  <span class="lead-duration duration">18.427</span>
+  <span class="lead-duration duration">14.266</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-67">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-66">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -3606,11 +3532,11 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   </span>
   <div class="description indention"></div>
 
-  <div id="element-67" class="collapse collapsable-details ">
+  <div id="element-66" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-68">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-67">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3622,7 +3548,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="before-68" class="inner-level collapse collapsable-details ">
+    <div id="before-67" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
@@ -3645,7 +3571,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-69">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-68">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -3657,7 +3583,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   </div>
 
-  <div id="steps-69" class="inner-level collapse collapsable-details ">
+  <div id="steps-68" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -3665,7 +3591,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">When</span>
   <span class="name">I go to Staking page</span>
 
-  <span class="lead-duration duration">4.254</span>
+  <span class="lead-duration duration">3.710</span>
 
 </div>
 
@@ -3692,7 +3618,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">Verify Staking screen</span>
 
-  <span class="lead-duration duration">9.130</span>
+  <span class="lead-duration duration">5.681</span>
 
 </div>
 
@@ -3724,7 +3650,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">And</span>
   <span class="name">I press on text <span class="argument">&quot;Bronze&quot;</span></span>
 
-  <span class="lead-duration duration">0.424</span>
+  <span class="lead-duration duration">0.350</span>
 
 </div>
 
@@ -3751,7 +3677,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">4.617</span>
+  <span class="lead-duration duration">4.524</span>
 
 </div>
 
@@ -3786,7 +3712,7 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-70">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-69">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3798,13 +3724,13 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
     </div>
 
-    <div id="after-70" class="inner-level collapse collapsable-details ">
+    <div id="after-69" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.316</span>
+  <span class="lead-duration duration">1.504</span>
 
           </div>
 
@@ -3815,15 +3741,15 @@ Session ID: 2d1a5af1-a05f-478f-a679-4f4473b1bb0f
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-71" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-70" class="collapsable-control">
       <a>Verify rank Bronze display must match text</a>
-      <a href="embeddings/embedding_1738985402.png" download target="_blank">
+      <a href="embeddings/embedding_-1702683503.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-71" class="collapse collapsable-details ">
+    <div id="embedding-70" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1738985402.png">
+        <img src="embeddings/embedding_-1702683503.png">
       </div>
     </div>
   </div>
