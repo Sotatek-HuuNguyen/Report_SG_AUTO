@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>27 Jul 2023, 17:26</td>
+      <td>03 Aug 2023, 17:18</td>
     </tr>
   </tbody>
 </table>
@@ -115,25 +115,24 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_1_3591798917.html">Withdraw with market value</a>
+      <a href="report-feature_3993936057.html">Tapjoy</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1558916969.html">@Withdraw</a>
 </div>
 
 
-  <span class="lead-duration duration">1:41.640</span>
+  <span class="lead-duration duration">4:20.320</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify amount with the same massage &quot;The amount must be at least $0.01.&quot;</span>
+  <span class="name">Verify show push notification when send point TapJoy</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -165,38 +164,38 @@ $(document).ready(function() {
       <div class="step">
 
 
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I press Activities page</span>
+
+  <span class="lead-duration duration">11.371</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">I go to Asset Page</span>
+  <span class="name">I login with username <span class="argument">&quot;automation_tester@example.com&quot;</span> and password <span class="argument">&quot;Sotatek@123&quot;</span> via API</span>
 
-  <span class="lead-duration duration">3.484</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to Withdraw SG</span>
-
-  <span class="lead-duration duration">11.316</span>
+  <span class="lead-duration duration">1.502</span>
 
 </div>
 
@@ -221,36 +220,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I press to Continue button</span>
+  <span class="name">I get point rate to SG</span>
 
-  <span class="lead-duration duration">2.234</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
-
-  <span class="lead-duration duration">12.390</span>
+  <span class="lead-duration duration">2.517</span>
 
 </div>
 
@@ -273,11 +245,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I enter amount <span class="argument">&quot;.07&quot;</span> SG in input</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I send point TapJoy via API for current user</span>
 
-  <span class="lead-duration duration">10.098</span>
+  <span class="lead-duration duration">2.782</span>
 
 </div>
 
@@ -302,9 +274,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">Message show error when withdraw is <span class="argument">&quot;The amount must be at least $0.01.&quot;</span></span>
+  <span class="name">I wait until push notification to be show</span>
 
-  <span class="lead-duration duration">1:2.116</span>
+  <span class="lead-duration duration">4:2.145</span>
 
 </div>
 
@@ -319,16 +291,14 @@ $(document).ready(function() {
           <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText}) (tried for 60 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.AccessibilityId: NotificationShortLookView}) (tried for 240 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
-	at com.qa.pages.BasePage.getText(BasePage.java:165)
-	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:192)
-	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:90)
-	at &#10045;.Message show error when withdraw is &quot;The amount must be at least $0.01.&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/BeforeWithdrawalSG.feature:22)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:70)
+	at com.qa.pages.ShoppingPage.getTextPushNotification(ShoppingPage.java:465)
+	at com.qa.stepdef.ShoppingPageSteps.verifyPushNotification(ShoppingPageSteps.java:164)
+	at &#10045;.I wait until push notification to be show(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ActivitiesPage.feature:84)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.AccessibilityId: NotificationShortLookView})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
@@ -337,11 +307,9 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
-	at com.qa.pages.BasePage.getText(BasePage.java:165)
-	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:192)
-	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:90)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:70)
+	at com.qa.pages.ShoppingPage.getTextPushNotification(ShoppingPage.java:465)
+	at com.qa.stepdef.ShoppingPageSteps.verifyPushNotification(ShoppingPageSteps.java:164)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -364,7 +332,8 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -386,16 +355,16 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@72f01de4 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@419cbdbb (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 56 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
+	... 55 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.AccessibilityId: NotificationShortLookView})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -411,11 +380,65 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 58 more
+	... 57 more
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I reopen app</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click button 'OK'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -453,7 +476,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.559</span>
+  <span class="lead-duration duration">4.015</span>
 
           </div>
 
@@ -465,14 +488,14 @@ Driver info: driver.version: IOSDriver
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
-      <a>Verify amount with the same massage &quot;The amount must be at least $0.01.&quot;</a>
-      <a href="embeddings/embedding_162412751.png" download target="_blank">
+      <a>Verify show push notification when send point TapJoy</a>
+      <a href="embeddings/embedding_-1578986194.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_162412751.png">
+        <img src="embeddings/embedding_-1578986194.png">
       </div>
     </div>
   </div>
@@ -500,7 +523,7 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">1:41.649</span>
+  <span class="lead-duration duration">1:43.990</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
@@ -543,7 +566,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">When</span>
   <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">3.375</span>
+  <span class="lead-duration duration">5.334</span>
 
 </div>
 
@@ -570,7 +593,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I press to Withdraw SG</span>
 
-  <span class="lead-duration duration">10.997</span>
+  <span class="lead-duration duration">11.577</span>
 
 </div>
 
@@ -597,7 +620,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I press to Continue button</span>
 
-  <span class="lead-duration duration">2.413</span>
+  <span class="lead-duration duration">2.365</span>
 
 </div>
 
@@ -624,7 +647,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
 
-  <span class="lead-duration duration">12.651</span>
+  <span class="lead-duration duration">12.512</span>
 
 </div>
 
@@ -649,9 +672,9 @@ Driver info: driver.version: IOSDriver
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter amount <span class="argument">&quot;23.43325235&quot;</span> SG in input</span>
+  <span class="name">I enter amount <span class="argument">&quot;.07&quot;</span> SG in input</span>
 
-  <span class="lead-duration duration">10.680</span>
+  <span class="lead-duration duration">10.205</span>
 
 </div>
 
@@ -678,7 +701,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Then</span>
   <span class="name">Message show error when withdraw is <span class="argument">&quot;The amount must be at least $0.01.&quot;</span></span>
 
-  <span class="lead-duration duration">1:1.531</span>
+  <span class="lead-duration duration">1:1.995</span>
 
 </div>
 
@@ -699,8 +722,8 @@ Driver info: driver.version: IOSDriver
 	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
 	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
 	at com.qa.pages.BasePage.getText(BasePage.java:165)
-	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:192)
-	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:90)
+	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:213)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:105)
 	at &#10045;.Message show error when withdraw is &quot;The amount must be at least $0.01.&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/BeforeWithdrawalSG.feature:22)
 Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
@@ -714,8 +737,8 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
 	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
 	at com.qa.pages.BasePage.getText(BasePage.java:165)
-	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:192)
-	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:90)
+	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:213)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:105)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -738,7 +761,7 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -760,7 +783,7 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@76ad3f88 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@386bb741 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -769,7 +792,7 @@ Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: wait
 Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -827,7 +850,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.598</span>
+  <span class="lead-duration duration">3.561</span>
 
           </div>
 
@@ -840,13 +863,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-10" class="collapsable-control">
       <a>Verify amount with the same massage &quot;The amount must be at least $0.01.&quot;</a>
-      <a href="embeddings/embedding_-1505160421.png" download target="_blank">
+      <a href="embeddings/embedding_-1044472824.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-10" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1505160421.png">
+        <img src="embeddings/embedding_-1044472824.png">
       </div>
     </div>
   </div>
@@ -863,24 +886,25 @@ Driver info: driver.version: IOSDriver
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2_2531063178.html">Categories tab in shopping screen</a>
+      <a href="report-feature_1_3591798917.html">Withdraw with market value</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
+       <a href="report-tag_1558916969.html">@Withdraw</a>
 </div>
 
 
-  <span class="lead-duration duration">4.265</span>
+  <span class="lead-duration duration">1:39.573</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify shopping from Categories tab</span>
+  <span class="name">Verify amount with the same massage &quot;The amount must be at least $0.01.&quot;</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -912,11 +936,146 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-Given failed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I tap on <span class="argument">&quot;Shopping&quot;</span> icon</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">4.265</span>
+  <span class="lead-duration duration">3.255</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Withdraw SG</span>
+
+  <span class="lead-duration duration">11.008</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Continue button</span>
+
+  <span class="lead-duration duration">2.350</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
+
+  <span class="lead-duration duration">12.385</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter amount <span class="argument">&quot;23.43325235&quot;</span> SG in input</span>
+
+  <span class="lead-duration duration">10.261</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Message show error when withdraw is <span class="argument">&quot;The amount must be at least $0.01.&quot;</span></span>
+
+  <span class="lead-duration duration">1:0.312</span>
 
 </div>
 
@@ -928,213 +1087,106 @@ Driver info: driver.version: IOSDriver
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-13" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText}) (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
+	at com.qa.pages.BasePage.getText(BasePage.java:165)
+	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:213)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:105)
+	at &#10045;.Message show error when withdraw is &quot;The amount must be at least $0.01.&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/BeforeWithdrawalSG.feature:22)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
+	at com.qa.pages.BasePage.getText(BasePage.java:165)
+	at com.qa.pages.WithdrawSGPage.getTextMassageError(WithdrawSGPage.java:213)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyMessageShow(WithdrawalSGSteps.java:105)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1d78d03 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 56 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeImage[@name=&quot;exclamation_circle&quot;]/parent::XCUIElementTypeOther/following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
-Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
-*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name=&quot;Shopping&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:672)
-	at com.qa.pages.MenuPage.tapOnShopping(MenuPage.java:76)
-	at com.qa.stepdef.VerifySteps.tapOnText(VerifySteps.java:41)
-	at &#10045;.I tap on &quot;Shopping&quot; icon(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/CategoriesTab.feature:20)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 58 more
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Categories&quot;</span> in screen <span class="argument">&quot;Shopping&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I tap on <span class="argument">&quot;Home Decor &amp; Furniture&quot;</span> in screen <span class="argument">&quot;Shopping&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to shop have contains <span class="argument">&quot;dummy&quot;</span> in categories</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I go to screen shopping and get transId success</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -1172,7 +1224,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.901</span>
+  <span class="lead-duration duration">3.569</span>
 
           </div>
 
@@ -1184,14 +1236,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-15" class="collapsable-control">
-      <a>Verify shopping from Categories tab</a>
-      <a href="embeddings/embedding_1674244071.png" download target="_blank">
+      <a>Verify amount with the same massage &quot;The amount must be at least $0.01.&quot;</a>
+      <a href="embeddings/embedding_2029288813.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-15" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1674244071.png">
+        <img src="embeddings/embedding_2029288813.png">
       </div>
     </div>
   </div>
@@ -1208,25 +1260,25 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3_4036489917.html">Verify Notification Center screen</a>
+      <a href="report-feature_6_88468998.html">Verify Referral screen</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_3477131647.html">@NotificationCenter</a>
+       <a href="report-tag_2149493708.html">@iOS</a>
 </div>
 
 
-  <span class="lead-duration duration">19.073</span>
+  <span class="lead-duration duration">34.491</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify notification must display</span>
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify referral screen</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1258,11 +1310,11 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I go to account page</span>
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">11.291</span>
+  <span class="lead-duration duration">14.477</span>
 
 </div>
 
@@ -1287,9 +1339,68 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I press to Notification Center</span>
+  <span class="name">I press on refer button on shopping page</span>
 
-  <span class="lead-duration duration">6.535</span>
+  <span class="lead-duration duration">12.978</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">All field must display in screen <span class="argument">&quot;Refer&quot;</span></span>
+
+  <span class="lead-duration duration">6.338</span>
+
+</div>
+
+
+
+
+
+
+
+          <table class="step-arguments">
+              <tr>
+                  <td>Your personal invitation code</td>
+              </tr>
+          </table>
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I take a screenshot</span>
+
+  <span class="lead-duration duration">0.283</span>
 
 </div>
 
@@ -1314,9 +1425,9 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">All notification must display in screen Notification Center</span>
+  <span class="name">I verify qr code must show correct link with pattern <span class="argument">&quot;https?:\/\/(\w).*[\=]+[\w]{6}&quot;</span></span>
 
-  <span class="lead-duration duration">1.246</span>
+  <span class="lead-duration duration">0.414</span>
 
 </div>
 
@@ -1328,16 +1439,17 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
-          <a>java.lang.AssertionError:</a>
+          <a>java.lang.NullPointerException:</a>
       </div>
       <div id="msg-18" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected [false] but found [true]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertFalse(Assert.java:67)
-	at org.testng.Assert.assertFalse(Assert.java:77)
-	at com.qa.stepdef.AccountPageSteps.verifyNotificationCenterScreen(AccountPageSteps.java:86)
-	at &#10045;.All notification must display in screen Notification Center(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/NotificationCenter.feature:23)
+        <pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.length()&quot; because &quot;this.text&quot; is null
+	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1770)
+	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
+	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
+	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1134)
+	at com.utils.RegexUtils.isPatternMatched(RegexUtils.java:14)
+	at com.qa.stepdef.ReferFriendSteps.verifyQRCode(ReferFriendSteps.java:72)
+	at &#10045;.I verify qr code must show correct link with pattern &quot;https?:\/\/(\w).*[\=]+[\w]{6}&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ReferralScreen.feature:11)
 </pre>
       </div>
     </div>
@@ -1379,7 +1491,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.752</span>
+  <span class="lead-duration duration">3.724</span>
 
           </div>
 
@@ -1391,14 +1503,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
-      <a>Verify notification must display</a>
-      <a href="embeddings/embedding_-361310046.png" download target="_blank">
+      <a>Verify referral screen</a>
+      <a href="embeddings/embedding_205061232.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-20" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-361310046.png">
+        <img src="embeddings/embedding_205061232.png">
       </div>
     </div>
   </div>
@@ -1415,25 +1527,25 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_6_88468998.html">Verify Referral screen</a>
+      <a href="report-feature_10_1998486077.html">Shopping history</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_2149493708.html">@iOS</a>
+       <a href="report-tag_3477131647.html">@NotificationCenter</a>
 </div>
 
 
-  <span class="lead-duration duration">38.425</span>
+  <span class="lead-duration duration">6:6.338</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-21">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify referral screen</span>
+  <span class="name">Verify notification must display with transaction just created</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1465,11 +1577,11 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
   <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">15.716</span>
+  <span class="lead-duration duration">13.477</span>
 
 </div>
 
@@ -1494,36 +1606,9 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I press on refer button on shopping page</span>
+  <span class="name">I press more button in <span class="argument">&quot;Trending&quot;</span> in iOS devices</span>
 
-  <span class="lead-duration duration">15.369</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Refer&quot;</span></span>
-
-  <span class="lead-duration duration">6.853</span>
+  <span class="lead-duration duration">8.364</span>
 
 </div>
 
@@ -1533,11 +1618,6 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Your personal invitation code</td>
-              </tr>
-          </table>
 
 
 
@@ -1553,9 +1633,171 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I take a screenshot</span>
+  <span class="name">I press stores contains <span class="argument">&quot;dummy&quot;</span> in name shop</span>
 
-  <span class="lead-duration duration">0.263</span>
+  <span class="lead-duration duration">12.941</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to screen shopping and get transId success</span>
+
+  <span class="lead-duration duration">8.430</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
+
+  <span class="lead-duration duration">1.834</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I wait utils push notification close</span>
+
+  <span class="lead-duration duration">4:0.347</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I reopen app</span>
+
+  <span class="lead-duration duration">3.418</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to account page</span>
+
+  <span class="lead-duration duration">10.280</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Notification Center</span>
+
+  <span class="lead-duration duration">6.985</span>
 
 </div>
 
@@ -1580,9 +1822,9 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">I verify qr code must show correct link with pattern <span class="argument">&quot;https?:\/\/(\w).*[\=]+[\w]{6}&quot;</span></span>
+  <span class="name">Verify after purchase success and notification center must display this purchase</span>
 
-  <span class="lead-duration duration">0.222</span>
+  <span class="lead-duration duration">1:0.258</span>
 
 </div>
 
@@ -1594,17 +1836,23 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-23">
-          <a>java.lang.NullPointerException:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-23" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.length()&quot; because &quot;this.text&quot; is null
-	at java.base/java.util.regex.Matcher.getTextLength(Matcher.java:1770)
-	at java.base/java.util.regex.Matcher.reset(Matcher.java:416)
-	at java.base/java.util.regex.Matcher.&lt;init&gt;(Matcher.java:253)
-	at java.base/java.util.regex.Pattern.matcher(Pattern.java:1134)
-	at com.utils.RegexUtils.isPatternMatched(RegexUtils.java:14)
-	at com.qa.stepdef.ReferFriendSteps.verifyQRCode(ReferFriendSteps.java:72)
-	at &#10045;.I verify qr code must show correct link with pattern &quot;https?:\/\/(\w).*[\=]+[\w]{6}&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ReferralScreen.feature:11)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeNavigationBar[@name=&quot;Notification Center&quot;]/parent::XCUIElementTypeOther//child::XCUIElementTypeCollectionView/XCUIElementTypeCell[1]//child::XCUIElementTypeStaticText[1]}) (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
+Session ID: 34c80e02-e5e7-4a98-a39f-fcf8c39c639a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
+	at com.qa.pages.BasePage.getText(BasePage.java:165)
+	at com.qa.pages.AccountPage.getFirstPurchase(AccountPage.java:86)
+	at com.qa.stepdef.AccountPageSteps.verifyPurchaseCreated(AccountPageSteps.java:70)
+	at &#10045;.Verify after purchase success and notification center must display this purchase(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ShoppingHistory.feature:14)
 </pre>
       </div>
     </div>
@@ -1646,7 +1894,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.671</span>
+  <span class="lead-duration duration">3.821</span>
 
           </div>
 
@@ -1658,14 +1906,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-25" class="collapsable-control">
-      <a>Verify referral screen</a>
-      <a href="embeddings/embedding_-1132235919.png" download target="_blank">
+      <a>Verify notification must display with transaction just created</a>
+      <a href="embeddings/embedding_1128520657.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-25" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1132235919.png">
+        <img src="embeddings/embedding_1128520657.png">
       </div>
     </div>
   </div>
@@ -1682,27 +1930,25 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_14_3365451618.html">Verify all screen shopping, Assets, Staking...</a>
+      <a href="report-feature_10_1998486077.html">Shopping history</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_430613275.html">@AssetScreen</a>
-       <a href="report-tag_3445781185.html">@FAQScreen</a>
+       <a href="report-tag_3477131647.html">@NotificationCenter</a>
 </div>
 
 
-  <span class="lead-duration duration">50.544</span>
+  <span class="lead-duration duration">18.582</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-26">
 
 <div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify FAQ About Staking screen</span>
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify notification must display</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -1734,11 +1980,220 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I go to account page</span>
+
+  <span class="lead-duration duration">11.377</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Notification Center</span>
+
+  <span class="lead-duration duration">6.187</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">All notification must display in screen Notification Center</span>
+
+  <span class="lead-duration duration">1.017</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-28" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at org.testng.Assert.assertFalse(Assert.java:77)
+	at com.qa.stepdef.AccountPageSteps.verifyNotificationCenterScreen(AccountPageSteps.java:86)
+	at &#10045;.All notification must display in screen Notification Center(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/ShoppingHistory.feature:24)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-29" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">3.746</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
+      <a>Verify notification must display</a>
+      <a href="embeddings/embedding_-118538133.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-30" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-118538133.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_14_3365451618.html">Verify all screen shopping, Assets, Staking...</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149493708.html">@iOS</a>
+       <a href="report-tag_1377060056.html">@Verify</a>
+       <a href="report-tag_430613275.html">@AssetScreen</a>
+       <a href="report-tag_3445781185.html">@FAQScreen</a>
+</div>
+
+
+  <span class="lead-duration duration">50.338</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify FAQ About Staking screen</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-31" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> icon</span>
 
-  <span class="lead-duration duration">10.393</span>
+  <span class="lead-duration duration">12.947</span>
 
 </div>
 
@@ -1765,7 +2220,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Check My Staking Rewards&quot;</span> in screen <span class="argument">&quot;Staking&quot;</span></span>
 
-  <span class="lead-duration duration">36.985</span>
+  <span class="lead-duration duration">34.372</span>
 
 </div>
 
@@ -1792,7 +2247,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About Staking&quot;</span> in screen <span class="argument">&quot;Staking&quot;</span></span>
 
-  <span class="lead-duration duration">3.164</span>
+  <span class="lead-duration duration">3.017</span>
 
 </div>
 
@@ -1803,19 +2258,19 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-28">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
           <a>org.openqa.selenium.StaleElementReferenceException:</a>
       </div>
-      <div id="msg-28" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.StaleElementReferenceException: The previously found element &quot;&quot;FAQ About Staking&quot; StaticText&quot; is not present in the current view anymore. Make sure the application UI has the expected state. Original error: No matches found for Elements matching predicate 'BLOCKPREDICATE(0x29af9be10)' from input {(
+      <div id="msg-33" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.StaleElementReferenceException: The previously found element &quot;&quot;FAQ About Staking&quot; StaticText&quot; is not present in the current view anymore. Make sure the application UI has the expected state. Original error: No matches found for Elements matching predicate 'BLOCKPREDICATE(0x294f2c240)' from input {(
     StaticText, {{50.0, 44.0}, {317.0, 44.0}}
 )}
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
-Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
+Session ID: 34c80e02-e5e7-4a98-a39f-fcf8c39c639a
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -1888,7 +2343,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-29">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1900,13 +2355,13 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
     </div>
 
-    <div id="after-29" class="inner-level collapse collapsable-details ">
+    <div id="after-34" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.550</span>
+  <span class="lead-duration duration">3.426</span>
 
           </div>
 
@@ -1917,15 +2372,15 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-30" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-35" class="collapsable-control">
       <a>Verify FAQ About Staking screen</a>
-      <a href="embeddings/embedding_893950878.png" download target="_blank">
+      <a href="embeddings/embedding_-1409498315.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-30" class="collapse collapsable-details ">
+    <div id="embedding-35" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_893950878.png">
+        <img src="embeddings/embedding_-1409498315.png">
       </div>
     </div>
   </div>
@@ -1954,10 +2409,10 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 </div>
 
 
-  <span class="lead-duration duration">1:25.593</span>
+  <span class="lead-duration duration">1:19.205</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-31">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
@@ -1970,14 +2425,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   </span>
   <div class="description indention"></div>
 
-  <div id="element-31" class="collapse collapsable-details  in ">
+  <div id="element-36" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-32">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1989,7 +2444,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   </div>
 
-  <div id="steps-32" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1997,7 +2452,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">Given</span>
   <span class="name">I go to Asset Page</span>
 
-  <span class="lead-duration duration">3.400</span>
+  <span class="lead-duration duration">3.375</span>
 
 </div>
 
@@ -2024,7 +2479,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">When</span>
   <span class="name">I press to Withdraw SG</span>
 
-  <span class="lead-duration duration">11.520</span>
+  <span class="lead-duration duration">10.944</span>
 
 </div>
 
@@ -2051,7 +2506,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">Text in Withdrawal Guide must display</span>
 
-  <span class="lead-duration duration">23.264</span>
+  <span class="lead-duration duration">22.435</span>
 
 </div>
 
@@ -2083,7 +2538,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I press to Learn More link in Withdraw Guide screen</span>
 
-  <span class="lead-duration duration">4.890</span>
+  <span class="lead-duration duration">4.942</span>
 
 </div>
 
@@ -2110,7 +2565,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;PATENTED CRYPTO BUYBACK SYSTEM BEGINS&quot;</span></span>
 
-  <span class="lead-duration duration">42.516</span>
+  <span class="lead-duration duration">37.508</span>
 
 </div>
 
@@ -2121,10 +2576,10 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-33">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
           <a>org.openqa.selenium.TimeoutException:</a>
       </div>
-      <div id="msg-33" class="collapse collapsable-details  in ">
+      <div id="msg-38" class="collapse collapsable-details  in ">
         <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeStaticText[@name=&quot;PATENTED CRYPTO BUYBACK SYSTEM BEGINS&quot;] (tried for 20 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
@@ -2135,12 +2590,12 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
-Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
+Session ID: 34c80e02-e5e7-4a98-a39f-fcf8c39c639a
 *** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name=&quot;PATENTED CRYPTO BUYBACK SYSTEM BEGINS&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
+	at jdk.internal.reflect.GeneratedConstructorAccessor57.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
@@ -2194,7 +2649,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -2216,264 +2671,6 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-34">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-34" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">3.604</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-35" class="collapsable-control">
-      <a>Verify Asset screen to Active Member screen</a>
-      <a href="embeddings/embedding_-179930239.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-35" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-179930239.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-    <div class="indention">
-      <b>Feature:</b>
-      <a href="report-feature_16_3170705190.html">Non-Member</a>
-    </div>
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_918541144.html">@NotActive</a>
-       <a href="report-tag_4065900696.html">@AccountScreen</a>
-</div>
-
-
-  <span class="lead-duration duration">2:24.945</span>
-
-
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-36">
-
-<div class="brief failed">
-  <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Account not active</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-36" class="collapse collapsable-details  in ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-37">
-
-<div class="brief failed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-37" class="inner-level collapse collapsable-details  in ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I login until success with user <span class="argument">&quot;usernew@example.com&quot;</span> and password <span class="argument">&quot;Test123&quot;</span> with user <span class="argument">&quot;Not activated&quot;</span></span>
-
-  <span class="lead-duration duration">1:55.782</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Membership status must display with status is <span class="argument">&quot;Not activated&quot;</span></span>
-
-  <span class="lead-duration duration">29.163</span>
-
-</div>
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-38">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-38" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Membership Status&quot;]/preceding-sibling::XCUIElementTypeStaticText})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getAttribute(&lt;generated&gt;)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:153)
-	at com.qa.pages.BasePage.getText(BasePage.java:177)
-	at com.qa.pages.AccountPage.getMembershipStatus(AccountPage.java:140)
-	at com.qa.stepdef.AccountPageSteps.verifyMembershipStatus(AccountPageSteps.java:60)
-	at &#10045;.Membership status must display with status is &quot;Not activated&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:6)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@46119b3c (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getAttribute(&lt;generated&gt;)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:153)
-	at com.qa.pages.BasePage.getText(BasePage.java:177)
-	at com.qa.pages.AccountPage.getMembershipStatus(AccountPage.java:140)
-	at com.qa.stepdef.AccountPageSteps.verifyMembershipStatus(AccountPageSteps.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Membership Status&quot;]/preceding-sibling::XCUIElementTypeStaticText})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: IOSDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 52 more
 </pre>
       </div>
     </div>
@@ -2515,7 +2712,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">4.258</span>
+  <span class="lead-duration duration">3.659</span>
 
           </div>
 
@@ -2527,14 +2724,14 @@ Driver info: driver.version: IOSDriver
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
-      <a>Account not active</a>
-      <a href="embeddings/embedding_2056578643.png" download target="_blank">
+      <a>Verify Asset screen to Active Member screen</a>
+      <a href="embeddings/embedding_1325857940.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-40" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_2056578643.png">
+        <img src="embeddings/embedding_1325857940.png">
       </div>
     </div>
   </div>
@@ -2558,19 +2755,20 @@ Driver info: driver.version: IOSDriver
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_1377060056.html">@Verify</a>
-       <a href="report-tag_2626013346.html">@StakingScreen</a>
+       <a href="report-tag_4046142535.html">@Dummy</a>
+       <a href="report-tag_2200784819.html">@TrendingStoreNone</a>
+       <a href="report-tag_3000260918.html">@Pending</a>
 </div>
 
 
-  <span class="lead-duration duration">3.692</span>
+  <span class="lead-duration duration">1:34.466</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify Staking screen to Active Member screen</span>
+  <span class="name">Shopping in &quot;indoleads&quot; with &quot;approved&quot; transaction</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -2602,11 +2800,38 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-When failed">
-  <span class="keyword indention">When</span>
-  <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> icon</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">3.692</span>
+  <span class="lead-duration duration">8.823</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
+
+  <span class="lead-duration duration">1:25.643</span>
 
 </div>
 
@@ -2618,47 +2843,22 @@ Driver info: driver.version: IOSDriver
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-43">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
+          <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-43" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.socialgood-foundation.sg-app-ios-adhoc, databaseEnabled=false, deviceName=iPhone X, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, platform=MAC, platformName=iOS, takesScreenshot=true, udid=88b47a52c63057df11014d4ef4b0b44814220e8a, wdaLocalPort=10001, webStorageEnabled=false}] -&gt; xpath: //XCUIElementTypeImage/../../following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]] (tried for 60 second(s) with 500 milliseconds interval)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
-Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
-*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name=&quot;Staking&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:672)
-	at com.qa.pages.MenuPage.tapOnStaking(MenuPage.java:86)
-	at com.qa.stepdef.VerifySteps.tapOnText(VerifySteps.java:43)
-	at &#10045;.I tap on &quot;Staking&quot; icon(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:90)
+Session ID: 34c80e02-e5e7-4a98-a39f-fcf8c39c639a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:376)
+	at com.qa.pages.BasePage.click(BasePage.java:116)
+	at com.qa.pages.ShoppingPage.selectContainText(ShoppingPage.java:381)
+	at com.qa.stepdef.ShoppingPageSteps.chooseShopContains(ShoppingPageSteps.java:270)
+	at &#10045;.Choose Shop contains &quot;dummy&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:28)
 </pre>
       </div>
     </div>
@@ -2680,7 +2880,34 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">I press on Active Membership</span>
+  <span class="name">Shop as a Non-Member</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I create transaction shopping via api with <span class="argument">&quot;approved&quot;</span> status and <span class="argument">&quot;indoleads&quot;</span> network</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2707,7 +2934,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span></span>
+  <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -2719,29 +2946,6 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
 
-          <table class="step-arguments">
-              <tr>
-                  <td>Earn more rewards as a member</td>
-              </tr>
-              <tr>
-                  <td>Just follow the in-app steps to get 200 SG to hold as your Membership Access Pass.</td>
-              </tr>
-              <tr>
-                  <td>Highest Shopping Rewards</td>
-              </tr>
-              <tr>
-                  <td>Up to 15% APY Staking</td>
-              </tr>
-              <tr>
-                  <td>Exclusive Giveaways</td>
-              </tr>
-              <tr>
-                  <td>Members Only Discord Access</td>
-              </tr>
-              <tr>
-                  <td>Pre-Release Updates</td>
-              </tr>
-          </table>
 
 
 
@@ -2777,7 +2981,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.781</span>
+  <span class="lead-duration duration">3.692</span>
 
           </div>
 
@@ -2789,14 +2993,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
-      <a>Verify Staking screen to Active Member screen</a>
-      <a href="embeddings/embedding_-974890294.png" download target="_blank">
+      <a>Shopping in &quot;indoleads&quot; with &quot;approved&quot; transaction</a>
+      <a href="embeddings/embedding_1725196153.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-45" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-974890294.png">
+        <img src="embeddings/embedding_1725196153.png">
       </div>
     </div>
   </div>
@@ -2813,28 +3017,24 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_18_3165188647.html">Withdraw 2nd in a day</a>
+      <a href="report-feature_17_3378780838.html">Register user validation</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_2149493708.html">@iOS</a>
-       <a href="report-tag_214133181.html">@Withdraw2nd</a>
-       <a href="report-tag_856024266.html">@WithdrawMarketValue</a>
-       <a href="report-tag_2209192177.html">@Test</a>
-       <a href="report-tag_1558916969.html">@Withdraw</a>
 </div>
 
 
-  <span class="lead-duration duration">1:22.052</span>
+  <span class="lead-duration duration">2:16.546</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-46">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
-  <span class="name">Verify withdraw 2nd in a day</span>
+  <span class="name">Verify validate register with email and password</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -2866,38 +3066,11 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I go to Asset Page</span>
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">6.460</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to Withdraw SG</span>
-
-  <span class="lead-duration duration">11.255</span>
+  <span class="lead-duration duration">9.683</span>
 
 </div>
 
@@ -2922,9 +3095,9 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I press to Continue button</span>
+  <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">2.407</span>
+  <span class="lead-duration duration">2.577</span>
 
 </div>
 
@@ -2947,11 +3120,38 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
+  <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;Ab123!@#$%^&quot;</span></span>
 
-  <span class="lead-duration duration">1:1.928</span>
+  <span class="lead-duration duration">1:3.800</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Message must be show with error <span class="argument">&quot;Something isn't right with this password. Please only use standard alphabet letters, numbers, and symbol.&quot;</span></span>
+
+  <span class="lead-duration duration">1:0.484</span>
 
 </div>
 
@@ -2966,14 +3166,16 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
           <a>org.openqa.selenium.TimeoutException:</a>
       </div>
       <div id="msg-48" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.chained({By.IosNsPredicate: type == &quot;XCUIElementTypeSecureTextField&quot;}) (tried for 60 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Error&quot;]/following-sibling::XCUIElementTypeStaticText}) (tried for 60 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:376)
-	at com.qa.pages.WithdrawSGPage.authenticatePassword(WithdrawSGPage.java:286)
-	at com.qa.stepdef.WithdrawalSGSteps.enterAuthenticate(WithdrawalSGSteps.java:68)
-	at &#10045;.I enter authenticate password &quot;Sotatek@123&quot; to navigate withdraw SG(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/Withdraw.feature:54)
-Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.IosNsPredicate: type == &quot;XCUIElementTypeSecureTextField&quot;})
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
+	at com.qa.pages.BasePage.getText(BasePage.java:177)
+	at com.qa.pages.ABSignUp.getTextMessageError(ABSignUp.java:72)
+	at com.qa.stepdef.app.SignUpSteps.verifyMessage(SignUpSteps.java:40)
+	at &#10045;.Message must be show with error &quot;Something isn't right with this password. Please only use standard alphabet letters, numbers, and symbol.&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithRegister.feature:19)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Error&quot;]/following-sibling::XCUIElementTypeStaticText})
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
 	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
 	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
@@ -2981,13 +3183,14 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:376)
-	at com.qa.pages.WithdrawSGPage.authenticatePassword(WithdrawSGPage.java:286)
-	at com.qa.stepdef.WithdrawalSGSteps.enterAuthenticate(WithdrawalSGSteps.java:68)
-	at jdk.internal.reflect.GeneratedMethodAccessor327.invoke(Unknown Source)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.BasePage.getAttribute(BasePage.java:152)
+	at com.qa.pages.BasePage.getText(BasePage.java:177)
+	at com.qa.pages.ABSignUp.getTextMessageError(ABSignUp.java:72)
+	at com.qa.stepdef.app.SignUpSteps.verifyMessage(SignUpSteps.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
@@ -3008,7 +3211,7 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
 	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
 	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -3030,16 +3233,16 @@ Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element b
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@11b717a6 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7a8edfb9 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 55 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.IosNsPredicate: type == &quot;XCUIElementTypeSecureTextField&quot;})
+	... 56 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Error&quot;]/following-sibling::XCUIElementTypeStaticText})
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
 Driver info: driver.version: IOSDriver
 	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -3055,38 +3258,11 @@ Driver info: driver.version: IOSDriver
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
 	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 57 more
+	... 58 more
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Message error must display <span class="argument">&quot;A withdrawal has been performed within the last 30 days&quot;</span></span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -3124,7 +3300,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.771</span>
+  <span class="lead-duration duration">3.600</span>
 
           </div>
 
@@ -3136,14 +3312,759 @@ Driver info: driver.version: IOSDriver
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-50" class="collapsable-control">
-      <a>Verify withdraw 2nd in a day</a>
-      <a href="embeddings/embedding_-1943390143.png" download target="_blank">
+      <a>Verify validate register with email and password</a>
+      <a href="embeddings/embedding_-1357664830.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-50" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1943390143.png">
+        <img src="embeddings/embedding_-1357664830.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_18_3165188647.html">Withdraw 2nd in a day</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149493708.html">@iOS</a>
+       <a href="report-tag_214133181.html">@Withdraw2nd</a>
+       <a href="report-tag_856024266.html">@WithdrawMarketValue</a>
+       <a href="report-tag_1558916969.html">@Withdraw</a>
+</div>
+
+
+  <span class="lead-duration duration">2:49.757</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-51">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify withdraw success</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-51" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-52">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-52" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to Asset Page</span>
+
+  <span class="lead-duration duration">3.337</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Withdraw SG</span>
+
+  <span class="lead-duration duration">11.309</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Continue button</span>
+
+  <span class="lead-duration duration">2.288</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter authenticate password <span class="argument">&quot;Sotatek@123&quot;</span> to navigate withdraw SG</span>
+
+  <span class="lead-duration duration">12.294</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter amount <span class="argument">&quot;0.2&quot;</span> SG in input</span>
+
+  <span class="lead-duration duration">10.082</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I tap on <span class="argument">&quot;Request Withdrawal&quot;</span> in request confirm</span>
+
+  <span class="lead-duration duration">38.990</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter password <span class="argument">&quot;Sg123123&quot;</span> of account sandbox and wait to payment success</span>
+
+  <span class="lead-duration duration">30.189</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I verify detail screen payment withdraw success</span>
+
+  <span class="lead-duration duration">1:1.264</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-53">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-53" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Withdrawal Accepted&quot;]}) (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.WithdrawSGPage.verifySuccessDetailScreen(WithdrawSGPage.java:378)
+	at com.qa.stepdef.WithdrawalSGSteps.verify(WithdrawalSGSteps.java:138)
+	at &#10045;.I verify detail screen payment withdraw success(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/Withdraw.feature:57)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Withdrawal Accepted&quot;]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.WithdrawSGPage.verifySuccessDetailScreen(WithdrawSGPage.java:378)
+	at com.qa.stepdef.WithdrawalSGSteps.verify(WithdrawalSGSteps.java:138)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2c176bf9 (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 54 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Withdrawal Accepted&quot;]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 56 more
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-54">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-54" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">3.788</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-55" class="collapsable-control">
+      <a>Verify withdraw success</a>
+      <a href="embeddings/embedding_-1692725361.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-55" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1692725361.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_18_3165188647.html">Withdraw 2nd in a day</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2149493708.html">@iOS</a>
+       <a href="report-tag_214133181.html">@Withdraw2nd</a>
+       <a href="report-tag_856024266.html">@WithdrawMarketValue</a>
+       <a href="report-tag_2209192177.html">@Test</a>
+       <a href="report-tag_1558916969.html">@Withdraw</a>
+</div>
+
+
+  <span class="lead-duration duration">1:16.148</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-56">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify withdraw 2nd in a day</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-56" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-57">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-57" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I go to Asset Page</span>
+
+  <span class="lead-duration duration">3.487</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Withdraw SG</span>
+
+  <span class="lead-duration duration">10.270</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to Continue button</span>
+
+  <span class="lead-duration duration">2.302</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Message error must display <span class="argument">&quot;A withdrawal has been performed within the last 30 days&quot;</span></span>
+
+  <span class="lead-duration duration">1:0.086</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-58">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-58" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: //XCUIElementTypeStaticText[contains(@name,&quot;A withdrawal has been performed within the last 24 hours&quot;)]}) (tried for 60 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.WithdrawSGPage.verifyMessageBox(WithdrawSGPage.java:276)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyError(WithdrawalSGSteps.java:152)
+	at &#10045;.Message error must display &quot;A withdrawal has been performed within the last 30 days&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/Withdraw.feature:68)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[contains(@name,&quot;A withdrawal has been performed within the last 24 hours&quot;)]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:65)
+	at com.qa.pages.WithdrawSGPage.verifyMessageBox(WithdrawSGPage.java:276)
+	at com.qa.stepdef.WithdrawalSGSteps.verifyError(WithdrawalSGSteps.java:152)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
+	at jdk.internal.reflect.GeneratedMethodAccessor175.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@30fa0edd (tried for 1 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	... 54 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[contains(@name,&quot;A withdrawal has been performed within the last 24 hours&quot;)]})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: driver.version: IOSDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 56 more
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-59">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-59" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">3.629</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-60" class="collapsable-control">
+      <a>Verify withdraw 2nd in a day</a>
+      <a href="embeddings/embedding_1582853226.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-60" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_1582853226.png">
       </div>
     </div>
   </div>

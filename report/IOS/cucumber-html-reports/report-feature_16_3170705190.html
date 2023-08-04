@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>27 Jul 2023, 17:26</td>
+      <td>03 Aug 2023, 17:18</td>
     </tr>
   </tbody>
 </table>
@@ -128,17 +128,17 @@ $(document).ready(function() {
         <tr>
           <td class="tagname">Non-Member</td>
           <td      class="passed"    >52</td>
-          <td      class="failed"    >2</td>
-          <td     class="skipped"   >2</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >3</td>
           <td >0</td>
           <td >0</td>
           <td class="total">56</td>
 
-          <td  class="passed"    >10</td>
-          <td  class="failed"    >2</td>
+          <td  class="passed"    >11</td>
+          <td  class="failed"    >1</td>
           <td class="total">12</td>
 
-          <td class="duration" data-value="669149429000">11:9.149</td>
+          <td class="duration" data-value="725514966000">12:5.514</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -193,12 +193,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2:24.945</span>
+  <span class="lead-duration duration">1:32.042</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Account not active</span>
 
@@ -209,16 +209,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -228,7 +228,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -236,7 +236,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I login until success with user <span class="argument">&quot;usernew@example.com&quot;</span> and password <span class="argument">&quot;Test123&quot;</span> with user <span class="argument">&quot;Not activated&quot;</span></span>
 
-  <span class="lead-duration duration">1:55.782</span>
+  <span class="lead-duration duration">1:19.165</span>
 
 </div>
 
@@ -259,11 +259,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Membership status must display with status is <span class="argument">&quot;Not activated&quot;</span></span>
 
-  <span class="lead-duration duration">29.163</span>
+  <span class="lead-duration duration">12.876</span>
 
 </div>
 
@@ -271,101 +271,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Membership Status&quot;]/preceding-sibling::XCUIElementTypeStaticText})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getAttribute(&lt;generated&gt;)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:153)
-	at com.qa.pages.BasePage.getText(BasePage.java:177)
-	at com.qa.pages.AccountPage.getMembershipStatus(AccountPage.java:140)
-	at com.qa.stepdef.AccountPageSteps.verifyMembershipStatus(AccountPageSteps.java:60)
-	at &#10045;.Membership status must display with status is &quot;Not activated&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:6)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@46119b3c (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getAttribute(&lt;generated&gt;)
-	at com.qa.pages.BasePage.getAttribute(BasePage.java:153)
-	at com.qa.pages.BasePage.getText(BasePage.java:177)
-	at com.qa.pages.AccountPage.getMembershipStatus(AccountPage.java:140)
-	at com.qa.stepdef.AccountPageSteps.verifyMembershipStatus(AccountPageSteps.java:60)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:85)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:129)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:129)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at com.qa.runners.RunnerBase.scenario(RunnerBase.java:70)
-	at jdk.internal.reflect.GeneratedMethodAccessor197.invoke(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //XCUIElementTypeStaticText[@name=&quot;Membership Status&quot;]/preceding-sibling::XCUIElementTypeStaticText})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: driver.version: IOSDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 52 more
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -385,7 +290,7 @@ Driver info: driver.version: IOSDriver
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -397,13 +302,13 @@ Driver info: driver.version: IOSDriver
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-3" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">4.258</span>
+  <span class="lead-duration duration">3.578</span>
 
           </div>
 
@@ -414,15 +319,15 @@ Driver info: driver.version: IOSDriver
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
       <a>Account not active</a>
-      <a href="embeddings/embedding_2056578643.png" download target="_blank">
+      <a href="embeddings/embedding_1885413739.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
+    <div id="embedding-4" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_2056578643.png">
+        <img src="embeddings/embedding_1885413739.png">
       </div>
     </div>
   </div>
@@ -448,10 +353,10 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">40.116</span>
+  <span class="lead-duration duration">41.316</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -464,14 +369,14 @@ Driver info: driver.version: IOSDriver
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details ">
+  <div id="element-5" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -483,7 +388,7 @@ Driver info: driver.version: IOSDriver
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details ">
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -491,7 +396,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">4.360</span>
+  <span class="lead-duration duration">5.410</span>
 
 </div>
 
@@ -518,7 +423,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">12.884</span>
+  <span class="lead-duration duration">12.229</span>
 
 </div>
 
@@ -545,7 +450,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.963</span>
+  <span class="lead-duration duration">21.146</span>
 
 </div>
 
@@ -572,7 +477,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Then</span>
   <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
 
-  <span class="lead-duration duration">1.909</span>
+  <span class="lead-duration duration">2.529</span>
 
 </div>
 
@@ -626,7 +531,7 @@ Driver info: driver.version: IOSDriver
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-8">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -638,13 +543,13 @@ Driver info: driver.version: IOSDriver
 
     </div>
 
-    <div id="after-8" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.614</span>
+  <span class="lead-duration duration">3.530</span>
 
           </div>
 
@@ -655,15 +560,15 @@ Driver info: driver.version: IOSDriver
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-9" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
       <a>Shopping with &quot;approved&quot; transaction</a>
-      <a href="embeddings/embedding_304074880.png" download target="_blank">
+      <a href="embeddings/embedding_43063731.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-9" class="collapse collapsable-details ">
+    <div id="embedding-8" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_304074880.png">
+        <img src="embeddings/embedding_43063731.png">
       </div>
     </div>
   </div>
@@ -689,10 +594,10 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">47.546</span>
+  <span class="lead-duration duration">1:2.225</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -705,14 +610,14 @@ Driver info: driver.version: IOSDriver
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details ">
+  <div id="element-9" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -724,7 +629,7 @@ Driver info: driver.version: IOSDriver
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details ">
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -732,7 +637,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">12.578</span>
+  <span class="lead-duration duration">8.688</span>
 
 </div>
 
@@ -759,7 +664,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">12.941</span>
+  <span class="lead-duration duration">27.899</span>
 
 </div>
 
@@ -786,7 +691,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.332</span>
+  <span class="lead-duration duration">23.820</span>
 
 </div>
 
@@ -813,7 +718,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Then</span>
   <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;pending&quot;</span></span>
 
-  <span class="lead-duration duration">1.694</span>
+  <span class="lead-duration duration">1.816</span>
 
 </div>
 
@@ -867,7 +772,7 @@ Driver info: driver.version: IOSDriver
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-12">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-11">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -879,13 +784,13 @@ Driver info: driver.version: IOSDriver
 
     </div>
 
-    <div id="after-12" class="inner-level collapse collapsable-details ">
+    <div id="after-11" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.587</span>
+  <span class="lead-duration duration">3.459</span>
 
           </div>
 
@@ -896,15 +801,15 @@ Driver info: driver.version: IOSDriver
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-13" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
       <a>Shopping with &quot;pending&quot; transaction</a>
-      <a href="embeddings/embedding_955354993.png" download target="_blank">
+      <a href="embeddings/embedding_516745031.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-13" class="collapse collapsable-details ">
+    <div id="embedding-12" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_955354993.png">
+        <img src="embeddings/embedding_516745031.png">
       </div>
     </div>
   </div>
@@ -930,10 +835,10 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">48.196</span>
+  <span class="lead-duration duration">39.919</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-14">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -946,14 +851,14 @@ Driver info: driver.version: IOSDriver
   </span>
   <div class="description indention"></div>
 
-  <div id="element-14" class="collapse collapsable-details ">
+  <div id="element-13" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -965,7 +870,7 @@ Driver info: driver.version: IOSDriver
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details ">
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -973,7 +878,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">10.491</span>
+  <span class="lead-duration duration">5.538</span>
 
 </div>
 
@@ -1000,7 +905,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">14.863</span>
+  <span class="lead-duration duration">11.659</span>
 
 </div>
 
@@ -1027,7 +932,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.924</span>
+  <span class="lead-duration duration">20.317</span>
 
 </div>
 
@@ -1054,7 +959,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Then</span>
   <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;declined&quot;</span></span>
 
-  <span class="lead-duration duration">1.917</span>
+  <span class="lead-duration duration">2.403</span>
 
 </div>
 
@@ -1108,7 +1013,7 @@ Driver info: driver.version: IOSDriver
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-16">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-15">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -1120,13 +1025,13 @@ Driver info: driver.version: IOSDriver
 
     </div>
 
-    <div id="after-16" class="inner-level collapse collapsable-details ">
+    <div id="after-15" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">8.436</span>
+  <span class="lead-duration duration">3.596</span>
 
           </div>
 
@@ -1137,15 +1042,15 @@ Driver info: driver.version: IOSDriver
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-17" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
       <a>Shopping with &quot;declined&quot; transaction</a>
-      <a href="embeddings/embedding_-430137068.png" download target="_blank">
+      <a href="embeddings/embedding_-1341318881.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-17" class="collapse collapsable-details ">
+    <div id="embedding-16" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-430137068.png">
+        <img src="embeddings/embedding_-1341318881.png">
       </div>
     </div>
   </div>
@@ -1171,12 +1076,12 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">42.216</span>
+  <span class="lead-duration duration">1:34.466</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-17">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Shopping in &quot;indoleads&quot; with &quot;approved&quot; transaction</span>
 
@@ -1187,16 +1092,16 @@ Driver info: driver.version: IOSDriver
   </span>
   <div class="description indention"></div>
 
-  <div id="element-18" class="collapse collapsable-details ">
+  <div id="element-17" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-18">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1206,7 +1111,7 @@ Driver info: driver.version: IOSDriver
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details ">
+  <div id="steps-18" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1214,7 +1119,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">5.829</span>
+  <span class="lead-duration duration">8.823</span>
 
 </div>
 
@@ -1237,11 +1142,11 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">13.726</span>
+  <span class="lead-duration duration">1:25.643</span>
 
 </div>
 
@@ -1249,6 +1154,30 @@ Driver info: driver.version: IOSDriver
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-19">
+          <a>org.openqa.selenium.TimeoutException:</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[io.appium.java_client.ios.IOSDriver, Capabilities: {automationName=XCUITest, browserName=, bundleId=com.socialgood-foundation.sg-app-ios-adhoc, databaseEnabled=false, deviceName=iPhone X, javascriptEnabled=true, locationContextEnabled=false, networkConnectionEnabled=false, platform=MAC, platformName=iOS, takesScreenshot=true, udid=88b47a52c63057df11014d4ef4b0b44814220e8a, wdaLocalPort=10001, webStorageEnabled=false}] -&gt; xpath: //XCUIElementTypeImage/../../following-sibling::XCUIElementTypeOther/XCUIElementTypeStaticText[1]] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
+Session ID: 34c80e02-e5e7-4a98-a39f-fcf8c39c639a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.pages.BasePage.waitForElementClickable(BasePage.java:376)
+	at com.qa.pages.BasePage.click(BasePage.java:116)
+	at com.qa.pages.ShoppingPage.selectContainText(ShoppingPage.java:381)
+	at com.qa.stepdef.ShoppingPageSteps.chooseShopContains(ShoppingPageSteps.java:270)
+	at &#10045;.Choose Shop contains &quot;dummy&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:28)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1264,11 +1193,11 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.880</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1291,11 +1220,11 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I create transaction shopping via api with <span class="argument">&quot;approved&quot;</span> status and <span class="argument">&quot;indoleads&quot;</span> network</span>
 
-  <span class="lead-duration duration">1.780</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1318,7 +1247,7 @@ Driver info: driver.version: IOSDriver
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Notification must display and I open push notification with status shopping <span class="argument">&quot;approved&quot;</span></span>
 
@@ -1367,7 +1296,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">8.405</span>
+  <span class="lead-duration duration">3.692</span>
 
           </div>
 
@@ -1380,13 +1309,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-21" class="collapsable-control">
       <a>Shopping in &quot;indoleads&quot; with &quot;approved&quot; transaction</a>
-      <a href="embeddings/embedding_-1052509959.png" download target="_blank">
+      <a href="embeddings/embedding_1725196153.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-21" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1052509959.png">
+        <img src="embeddings/embedding_1725196153.png">
       </div>
     </div>
   </div>
@@ -1412,7 +1341,7 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">41.619</span>
+  <span class="lead-duration duration">42.795</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-22">
@@ -1455,7 +1384,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">5.978</span>
+  <span class="lead-duration duration">5.374</span>
 
 </div>
 
@@ -1482,7 +1411,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">13.304</span>
+  <span class="lead-duration duration">13.575</span>
 
 </div>
 
@@ -1509,7 +1438,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.839</span>
+  <span class="lead-duration duration">21.523</span>
 
 </div>
 
@@ -1536,7 +1465,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I create transaction shopping via api with <span class="argument">&quot;pending&quot;</span> status and <span class="argument">&quot;indoleads&quot;</span> network</span>
 
-  <span class="lead-duration duration">1.496</span>
+  <span class="lead-duration duration">2.321</span>
 
 </div>
 
@@ -1608,7 +1537,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.509</span>
+  <span class="lead-duration duration">3.604</span>
 
           </div>
 
@@ -1621,13 +1550,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-25" class="collapsable-control">
       <a>Shopping in &quot;indoleads&quot; with &quot;pending&quot; transaction</a>
-      <a href="embeddings/embedding_-1637607825.png" download target="_blank">
+      <a href="embeddings/embedding_1172970302.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-25" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1637607825.png">
+        <img src="embeddings/embedding_1172970302.png">
       </div>
     </div>
   </div>
@@ -1653,7 +1582,7 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">42.952</span>
+  <span class="lead-duration duration">38.979</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-26">
@@ -1696,7 +1625,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">5.442</span>
+  <span class="lead-duration duration">4.337</span>
 
 </div>
 
@@ -1723,7 +1652,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">13.917</span>
+  <span class="lead-duration duration">12.450</span>
 
 </div>
 
@@ -1750,7 +1679,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.996</span>
+  <span class="lead-duration duration">20.547</span>
 
 </div>
 
@@ -1777,7 +1706,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I create transaction shopping via api with <span class="argument">&quot;declined&quot;</span> status and <span class="argument">&quot;indoleads&quot;</span> network</span>
 
-  <span class="lead-duration duration">2.595</span>
+  <span class="lead-duration duration">1.643</span>
 
 </div>
 
@@ -1849,7 +1778,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">8.571</span>
+  <span class="lead-duration duration">3.591</span>
 
           </div>
 
@@ -1862,13 +1791,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-29" class="collapsable-control">
       <a>Shopping in &quot;indoleads&quot; with &quot;declined&quot; transaction</a>
-      <a href="embeddings/embedding_303639939.png" download target="_blank">
+      <a href="embeddings/embedding_1593281932.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-29" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_303639939.png">
+        <img src="embeddings/embedding_1593281932.png">
       </div>
     </div>
   </div>
@@ -1894,7 +1823,7 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">42.110</span>
+  <span class="lead-duration duration">40.867</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
@@ -1937,7 +1866,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">5.790</span>
+  <span class="lead-duration duration">4.399</span>
 
 </div>
 
@@ -1964,7 +1893,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">13.728</span>
+  <span class="lead-duration duration">12.050</span>
 
 </div>
 
@@ -1991,7 +1920,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">20.729</span>
+  <span class="lead-duration duration">20.831</span>
 
 </div>
 
@@ -2018,7 +1947,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I create transaction shopping via api with <span class="argument">&quot;approved&quot;</span> status and <span class="argument">&quot;cuelinks&quot;</span> network</span>
 
-  <span class="lead-duration duration">1.862</span>
+  <span class="lead-duration duration">3.585</span>
 
 </div>
 
@@ -2090,7 +2019,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.683</span>
+  <span class="lead-duration duration">3.576</span>
 
           </div>
 
@@ -2103,13 +2032,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-33" class="collapsable-control">
       <a>Shopping in &quot;cuelinks&quot; with &quot;approved&quot; transaction</a>
-      <a href="embeddings/embedding_-1315473237.png" download target="_blank">
+      <a href="embeddings/embedding_1425593648.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-33" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1315473237.png">
+        <img src="embeddings/embedding_1425593648.png">
       </div>
     </div>
   </div>
@@ -2135,7 +2064,7 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">47.269</span>
+  <span class="lead-duration duration">41.817</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-34">
@@ -2178,7 +2107,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">10.743</span>
+  <span class="lead-duration duration">5.286</span>
 
 </div>
 
@@ -2205,7 +2134,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">14.833</span>
+  <span class="lead-duration duration">13.342</span>
 
 </div>
 
@@ -2232,7 +2161,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">19.976</span>
+  <span class="lead-duration duration">21.008</span>
 
 </div>
 
@@ -2259,7 +2188,7 @@ Driver info: driver.version: IOSDriver
   <span class="keyword indention">And</span>
   <span class="name">I create transaction shopping via api with <span class="argument">&quot;pending&quot;</span> status and <span class="argument">&quot;accesstrade&quot;</span> network</span>
 
-  <span class="lead-duration duration">1.716</span>
+  <span class="lead-duration duration">2.179</span>
 
 </div>
 
@@ -2331,7 +2260,7 @@ Driver info: driver.version: IOSDriver
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.744</span>
+  <span class="lead-duration duration">3.658</span>
 
           </div>
 
@@ -2344,13 +2273,13 @@ Driver info: driver.version: IOSDriver
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-37" class="collapsable-control">
       <a>Shopping in &quot;accesstrade&quot; with &quot;pending&quot; transaction</a>
-      <a href="embeddings/embedding_-431687788.png" download target="_blank">
+      <a href="embeddings/embedding_1326455955.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-37" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-431687788.png">
+        <img src="embeddings/embedding_1326455955.png">
       </div>
     </div>
   </div>
@@ -2375,12 +2304,12 @@ Driver info: driver.version: IOSDriver
 </div>
 
 
-  <span class="lead-duration duration">3.692</span>
+  <span class="lead-duration duration">1:7.698</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-38">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify Staking screen to Active Member screen</span>
 
@@ -2391,16 +2320,16 @@ Driver info: driver.version: IOSDriver
   </span>
   <div class="description indention"></div>
 
-  <div id="element-38" class="collapse collapsable-details  in ">
+  <div id="element-38" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-39">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2410,15 +2339,15 @@ Driver info: driver.version: IOSDriver
 
   </div>
 
-  <div id="steps-39" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> icon</span>
 
-  <span class="lead-duration duration">3.692</span>
+  <span class="lead-duration duration">10.618</span>
 
 </div>
 
@@ -2426,55 +2355,6 @@ Driver info: driver.version: IOSDriver
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-40">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
-      </div>
-      <div id="msg-40" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {automationName: XCUITest, browserName: , bundleId: com.socialgood-foundation.s..., databaseEnabled: false, deviceName: iPhone X, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: iOS, takesScreenshot: true, udid: 88b47a52c63057df11014d4ef4b..., wdaLocalPort: 10001, webStorageEnabled: false}
-Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
-*** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name=&quot;Staking&quot;]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor62.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:672)
-	at com.qa.pages.MenuPage.tapOnStaking(MenuPage.java:86)
-	at com.qa.stepdef.VerifySteps.tapOnText(VerifySteps.java:43)
-	at &#10045;.I tap on &quot;Staking&quot; icon(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/ios/WithNoneUser.feature:90)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -2490,11 +2370,11 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I press on Active Membership</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">11.240</span>
 
 </div>
 
@@ -2517,11 +2397,11 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Staking&quot;</span></span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">45.839</span>
 
 </div>
 
@@ -2571,7 +2451,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-41">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-40">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2583,13 +2463,13 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
     </div>
 
-    <div id="after-41" class="inner-level collapse collapsable-details ">
+    <div id="after-40" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.781</span>
+  <span class="lead-duration duration">3.655</span>
 
           </div>
 
@@ -2600,15 +2480,15 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-42" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-41" class="collapsable-control">
       <a>Verify Staking screen to Active Member screen</a>
-      <a href="embeddings/embedding_-974890294.png" download target="_blank">
+      <a href="embeddings/embedding_-1775443869.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-42" class="collapse collapsable-details ">
+    <div id="embedding-41" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-974890294.png">
+        <img src="embeddings/embedding_-1775443869.png">
       </div>
     </div>
   </div>
@@ -2631,10 +2511,10 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 </div>
 
 
-  <span class="lead-duration duration">59.267</span>
+  <span class="lead-duration duration">58.203</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-43">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -2647,14 +2527,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   </span>
   <div class="description indention"></div>
 
-  <div id="element-43" class="collapse collapsable-details ">
+  <div id="element-42" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-44">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2666,7 +2546,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   </div>
 
-  <div id="steps-44" class="inner-level collapse collapsable-details ">
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2674,7 +2554,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon</span>
 
-  <span class="lead-duration duration">9.822</span>
+  <span class="lead-duration duration">9.562</span>
 
 </div>
 
@@ -2701,7 +2581,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">When</span>
   <span class="name">I press to Withdraw SG</span>
 
-  <span class="lead-duration duration">13.192</span>
+  <span class="lead-duration duration">12.264</span>
 
 </div>
 
@@ -2728,7 +2608,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I press to Continue button</span>
 
-  <span class="lead-duration duration">2.406</span>
+  <span class="lead-duration duration">2.203</span>
 
 </div>
 
@@ -2755,7 +2635,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I enter authenticate password <span class="argument">&quot;Test123&quot;</span> to navigate withdraw SG</span>
 
-  <span class="lead-duration duration">12.943</span>
+  <span class="lead-duration duration">12.905</span>
 
 </div>
 
@@ -2782,7 +2662,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I press to Continue button</span>
 
-  <span class="lead-duration duration">4.197</span>
+  <span class="lead-duration duration">4.091</span>
 
 </div>
 
@@ -2809,7 +2689,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Assets&quot;</span></span>
 
-  <span class="lead-duration duration">16.704</span>
+  <span class="lead-duration duration">17.175</span>
 
 </div>
 
@@ -2844,7 +2724,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-45">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -2856,13 +2736,13 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
     </div>
 
-    <div id="after-45" class="inner-level collapse collapsable-details ">
+    <div id="after-44" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.428</span>
+  <span class="lead-duration duration">3.461</span>
 
           </div>
 
@@ -2873,15 +2753,15 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-46" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
       <a>Verify Assets screen to Active Member screen</a>
-      <a href="embeddings/embedding_1985906461.png" download target="_blank">
+      <a href="embeddings/embedding_-1995705359.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-46" class="collapse collapsable-details ">
+    <div id="embedding-45" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1985906461.png">
+        <img src="embeddings/embedding_-1995705359.png">
       </div>
     </div>
   </div>
@@ -2906,10 +2786,10 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 </div>
 
 
-  <span class="lead-duration duration">1:49.215</span>
+  <span class="lead-duration duration">1:45.182</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-47">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-46">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario</span>
@@ -2922,14 +2802,14 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   </span>
   <div class="description indention"></div>
 
-  <div id="element-47" class="collapse collapsable-details ">
+  <div id="element-46" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-48">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-47">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -2941,7 +2821,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   </div>
 
-  <div id="steps-48" class="inner-level collapse collapsable-details ">
+  <div id="steps-47" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -2949,7 +2829,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">When</span>
   <span class="name">I go to Shopping page</span>
 
-  <span class="lead-duration duration">15.404</span>
+  <span class="lead-duration duration">15.001</span>
 
 </div>
 
@@ -2976,7 +2856,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I press more button in <span class="argument">&quot;Trending&quot;</span> in iOS devices</span>
 
-  <span class="lead-duration duration">8.056</span>
+  <span class="lead-duration duration">8.414</span>
 
 </div>
 
@@ -3003,7 +2883,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">I press stores contains <span class="argument">&quot;dummy&quot;</span> in name shop</span>
 
-  <span class="lead-duration duration">13.280</span>
+  <span class="lead-duration duration">12.070</span>
 
 </div>
 
@@ -3030,7 +2910,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Member</span>
 
-  <span class="lead-duration duration">16.328</span>
+  <span class="lead-duration duration">15.972</span>
 
 </div>
 
@@ -3057,7 +2937,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
   <span class="keyword indention">Then</span>
   <span class="name">All field must display in screen <span class="argument">&quot;Shopping&quot;</span></span>
 
-  <span class="lead-duration duration">56.145</span>
+  <span class="lead-duration duration">53.723</span>
 
 </div>
 
@@ -3107,7 +2987,7 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-49">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-48">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -3119,13 +2999,13 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
     </div>
 
-    <div id="after-49" class="inner-level collapse collapsable-details ">
+    <div id="after-48" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.800</span>
+  <span class="lead-duration duration">3.508</span>
 
           </div>
 
@@ -3136,15 +3016,15 @@ Session ID: 99cd69ae-05d8-442b-9014-b855e8e98f94
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-50" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-49" class="collapsable-control">
       <a>Shopping to Active member screen</a>
-      <a href="embeddings/embedding_1790793101.png" download target="_blank">
+      <a href="embeddings/embedding_996892190.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-50" class="collapse collapsable-details ">
+    <div id="embedding-49" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1790793101.png">
+        <img src="embeddings/embedding_996892190.png">
       </div>
     </div>
   </div>
