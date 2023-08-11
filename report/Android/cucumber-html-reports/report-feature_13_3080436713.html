@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>27 Jul 2023, 15:54</td>
+      <td>10 Aug 2023, 16:09</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Register user</td>
-          <td      class="passed"    >63</td>
+          <td      class="passed"    >66</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">63</td>
+          <td class="total">67</td>
 
           <td  class="passed"    >10</td>
-          <td >0</td>
-          <td class="total">10</td>
+          <td  class="failed"    >1</td>
+          <td class="total">11</td>
 
-          <td class="duration" data-value="233540304000">3:53.540</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="276967017000">4:36.967</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Register user</span>
 
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">42.533</span>
+  <span class="lead-duration duration">45.031</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">3.137</span>
+  <span class="lead-duration duration">3.516</span>
 
 </div>
 
@@ -261,7 +261,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to <span class="argument">&quot;Sign Out&quot;</span></span>
 
-  <span class="lead-duration duration">4.992</span>
+  <span class="lead-duration duration">4.742</span>
 
 </div>
 
@@ -288,7 +288,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">2.675</span>
+  <span class="lead-duration duration">2.453</span>
 
 </div>
 
@@ -315,7 +315,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I go to sign up account</span>
 
-  <span class="lead-duration duration">5.529</span>
+  <span class="lead-duration duration">5.442</span>
 
 </div>
 
@@ -342,7 +342,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I go to the <span class="argument">&quot;http://54.225.46.70/adminer.php&quot;</span> and login success</span>
 
-  <span class="lead-duration duration">7.139</span>
+  <span class="lead-duration duration">6.541</span>
 
 </div>
 
@@ -369,7 +369,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click to SQL Command</span>
 
-  <span class="lead-duration duration">0.373</span>
+  <span class="lead-duration duration">0.374</span>
 
 </div>
 
@@ -396,7 +396,380 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I query <span class="argument">&quot;SELECT verification_code FROM `verify_emails` WHERE `email` = '%s' LIMIT 50&quot;</span> to get data using email</span>
 
-  <span class="lead-duration duration">0.819</span>
+  <span class="lead-duration duration">0.851</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I get data from query</span>
+
+  <span class="lead-duration duration">0.042</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Submit verify code</span>
+
+  <span class="lead-duration duration">19.013</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Membership status must display with status is <span class="argument">&quot;Not activated&quot;</span></span>
+
+  <span class="lead-duration duration">2.052</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-3" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1.474</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
+      <a>User register success</a>
+      <a href="embeddings/embedding_674882213.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-4" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_674882213.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2821457422.html">@Android</a>
+</div>
+
+
+  <span class="lead-duration duration">1:32.180</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Verify user bonus must match</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I go to account page</span>
+
+  <span class="lead-duration duration">2.511</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to <span class="argument">&quot;Sign Out&quot;</span></span>
+
+  <span class="lead-duration duration">5.383</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
+
+  <span class="lead-duration duration">2.482</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to sign up account</span>
+
+  <span class="lead-duration duration">6.347</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I go to the <span class="argument">&quot;http://54.225.46.70/adminer.php&quot;</span> and login success</span>
+
+  <span class="lead-duration duration">7.676</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">Click to SQL Command</span>
+
+  <span class="lead-duration duration">0.616</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">I query <span class="argument">&quot;SELECT verification_code FROM `verify_emails` WHERE `email` = '%s' LIMIT 50&quot;</span> to get data using email</span>
+
+  <span class="lead-duration duration">1.132</span>
 
 </div>
 
@@ -450,380 +823,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Submit verify code</span>
 
-  <span class="lead-duration duration">15.254</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">Membership status must display with status is <span class="argument">&quot;Not activated&quot;</span></span>
-
-  <span class="lead-duration duration">2.571</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-  </div>
-</div>
-
-
-
-
-  <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
-
-<div class="brief passed">
-  <span class="keyword indention">Hooks</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-    </div>
-
-    <div id="after-3" class="inner-level collapse collapsable-details ">
-        <div class="hook">
-          <div class="brief passed">
-            <span class="keyword indention">After</span>
-              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
-
-  <span class="lead-duration duration">1.434</span>
-
-          </div>
-
-
-
-
-
-
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
-      <a>User register success</a>
-      <a href="embeddings/embedding_170926288.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-4" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_170926288.png">
-      </div>
-    </div>
-  </div>
-  </div>
-
-        </div>
-    </div>
-  </div>
-
-  </div>
-</div>
-
-
-<div class="element">
-
-
-<div class="tags indention">
-    <b>Tags:</b>
-       <a href="report-tag_2821457422.html">@Android</a>
-</div>
-
-
-  <span class="lead-duration duration">1:0.125</span>
-
-
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
-
-<div class="brief passed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user bonus must match</span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </span>
-  <div class="description indention"></div>
-
-  <div id="element-5" class="collapse collapsable-details ">
-
-
-
-
-
-<div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
-
-<div class="brief passed">
-  <span class="keyword indention">Steps</span>
-  <span class="name"></span>
-
-
-     <i class="chevron fa fa-fw"></i>
-</div>
-
-  </div>
-
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
-      <div class="step">
-
-
-<div class="brief step-name-Given passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">I go to account page</span>
-
-  <span class="lead-duration duration">2.524</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to <span class="argument">&quot;Sign Out&quot;</span></span>
-
-  <span class="lead-duration duration">5.209</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
-
-  <span class="lead-duration duration">2.496</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I go to sign up account</span>
-
-  <span class="lead-duration duration">5.316</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I go to the <span class="argument">&quot;http://54.225.46.70/adminer.php&quot;</span> and login success</span>
-
-  <span class="lead-duration duration">12.315</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Click to SQL Command</span>
-
-  <span class="lead-duration duration">0.959</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When passed">
-  <span class="keyword indention">When</span>
-  <span class="name">I query <span class="argument">&quot;SELECT verification_code FROM `verify_emails` WHERE `email` = '%s' LIMIT 50&quot;</span> to get data using email</span>
-
-  <span class="lead-duration duration">0.547</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">I get data from query</span>
-
-  <span class="lead-duration duration">0.557</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Submit verify code</span>
-
-  <span class="lead-duration duration">15.173</span>
+  <span class="lead-duration duration">17.746</span>
 
 </div>
 
@@ -850,7 +850,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I query <span class="argument">&quot;SELECT id FROM `users` WHERE `email` = '%s' LIMIT 50 &quot;</span> to get data using email</span>
 
-  <span class="lead-duration duration">2.304</span>
+  <span class="lead-duration duration">36.583</span>
 
 </div>
 
@@ -877,7 +877,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I take userid data from query</span>
 
-  <span class="lead-duration duration">0.032</span>
+  <span class="lead-duration duration">0.034</span>
 
 </div>
 
@@ -904,7 +904,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I get Grant Condition Fiat Amount using query <span class="argument">&quot;SELECT grant_condition_fiat_amount FROM `signup_campaigns` LIMIT 50&quot;</span></span>
 
-  <span class="lead-duration duration">2.219</span>
+  <span class="lead-duration duration">0.802</span>
 
 </div>
 
@@ -931,7 +931,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I get Registration Bonus Fiat Amount using query <span class="argument">&quot;SELECT registration_bonus_fiat_amount FROM `signup_campaigns` LIMIT 50&quot;</span></span>
 
-  <span class="lead-duration duration">1.212</span>
+  <span class="lead-duration duration">1.454</span>
 
 </div>
 
@@ -958,7 +958,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I get SG rate Average using query <span class="argument">&quot;SELECT sg_rate_average_id FROM `purchases` WHERE `user_id` = '%s' LIMIT 50&quot;</span></span>
 
-  <span class="lead-duration duration">1.150</span>
+  <span class="lead-duration duration">1.129</span>
 
 </div>
 
@@ -985,7 +985,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I get Fiat Amount USD using query <span class="argument">&quot;SELECT fiat_amount_usd FROM `sg_rate_averages` WHERE `id` = '%s' LIMIT 50&quot;</span></span>
 
-  <span class="lead-duration duration">0.856</span>
+  <span class="lead-duration duration">1.259</span>
 
 </div>
 
@@ -1012,7 +1012,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to <span class="argument">&quot;Shopping History&quot;</span></span>
 
-  <span class="lead-duration duration">1.862</span>
+  <span class="lead-duration duration">1.332</span>
 
 </div>
 
@@ -1039,7 +1039,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to Bonus in history shopping</span>
 
-  <span class="lead-duration duration">5.370</span>
+  <span class="lead-duration duration">5.623</span>
 
 </div>
 
@@ -1066,7 +1066,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I verify grant fiat amount must match in UI</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -1093,7 +1093,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Log all scenarios</span>
 
-  <span class="lead-duration duration">0.011</span>
+  <span class="lead-duration duration">0.016</span>
 
 </div>
 
@@ -1138,7 +1138,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.470</span>
+  <span class="lead-duration duration">1.890</span>
 
           </div>
 
@@ -1151,13 +1151,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
       <a>Verify user bonus must match</a>
-      <a href="embeddings/embedding_-1022314414.png" download target="_blank">
+      <a href="embeddings/embedding_863846600.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-8" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1022314414.png">
+        <img src="embeddings/embedding_863846600.png">
       </div>
     </div>
   </div>
@@ -1183,7 +1183,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">24.779</span>
+  <span class="lead-duration duration">22.031</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
@@ -1226,7 +1226,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">Click More of Trending Stores</span>
 
-  <span class="lead-duration duration">2.738</span>
+  <span class="lead-duration duration">3.154</span>
 
 </div>
 
@@ -1253,7 +1253,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Choose Shop contains <span class="argument">&quot;dummy&quot;</span></span>
 
-  <span class="lead-duration duration">2.032</span>
+  <span class="lead-duration duration">1.364</span>
 
 </div>
 
@@ -1280,7 +1280,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Shop as a Non-Member</span>
 
-  <span class="lead-duration duration">18.296</span>
+  <span class="lead-duration duration">15.700</span>
 
 </div>
 
@@ -1307,7 +1307,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I submit transaction shopping via api with status <span class="argument">&quot;approved&quot;</span></span>
 
-  <span class="lead-duration duration">1.711</span>
+  <span class="lead-duration duration">1.812</span>
 
 </div>
 
@@ -1379,7 +1379,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.335</span>
+  <span class="lead-duration duration">1.343</span>
 
           </div>
 
@@ -1392,13 +1392,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-12" class="collapsable-control">
       <a>User can purchase in 30 days</a>
-      <a href="embeddings/embedding_-1096590506.png" download target="_blank">
+      <a href="embeddings/embedding_-946020900.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-12" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1096590506.png">
+        <img src="embeddings/embedding_-946020900.png">
       </div>
     </div>
   </div>
@@ -1421,7 +1421,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">20.355</span>
+  <span class="lead-duration duration">20.952</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
@@ -1464,7 +1464,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">3.214</span>
+  <span class="lead-duration duration">3.399</span>
 
 </div>
 
@@ -1491,7 +1491,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to <span class="argument">&quot;Sign Out&quot;</span></span>
 
-  <span class="lead-duration duration">5.047</span>
+  <span class="lead-duration duration">5.617</span>
 
 </div>
 
@@ -1518,7 +1518,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">2.470</span>
+  <span class="lead-duration duration">2.566</span>
 
 </div>
 
@@ -1543,9 +1543,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I submit email <span class="argument">&quot;anbxyz&quot;</span> and password <span class="argument">&quot;&quot;</span></span>
+  <span class="name">I submit email <span class="argument">&quot;abcxyz&quot;</span> and password <span class="argument">&quot;&quot;</span></span>
 
-  <span class="lead-duration duration">8.771</span>
+  <span class="lead-duration duration">8.510</span>
 
 </div>
 
@@ -1572,7 +1572,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Something went wrong with the email address format. Please check what you entered.&quot;</span></span>
 
-  <span class="lead-duration duration">0.850</span>
+  <span class="lead-duration duration">0.858</span>
 
 </div>
 
@@ -1617,7 +1617,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.413</span>
+  <span class="lead-duration duration">1.366</span>
 
           </div>
 
@@ -1630,13 +1630,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-16" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_795355771.png" download target="_blank">
+      <a href="embeddings/embedding_-343184517.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-16" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_795355771.png">
+        <img src="embeddings/embedding_-343184517.png">
       </div>
     </div>
   </div>
@@ -1659,7 +1659,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">13.831</span>
+  <span class="lead-duration duration">13.877</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
@@ -1702,7 +1702,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">2.709</span>
+  <span class="lead-duration duration">2.582</span>
 
 </div>
 
@@ -1729,7 +1729,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.825</span>
+  <span class="lead-duration duration">1.842</span>
 
 </div>
 
@@ -1756,7 +1756,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;&quot;</span></span>
 
-  <span class="lead-duration duration">8.354</span>
+  <span class="lead-duration duration">8.517</span>
 
 </div>
 
@@ -1783,7 +1783,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Enter your password.&quot;</span></span>
 
-  <span class="lead-duration duration">0.941</span>
+  <span class="lead-duration duration">0.934</span>
 
 </div>
 
@@ -1828,7 +1828,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.337</span>
+  <span class="lead-duration duration">1.306</span>
 
           </div>
 
@@ -1841,13 +1841,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-20" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_1817540780.png" download target="_blank">
+      <a href="embeddings/embedding_-300018700.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-20" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1817540780.png">
+        <img src="embeddings/embedding_-300018700.png">
       </div>
     </div>
   </div>
@@ -1870,7 +1870,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">13.038</span>
+  <span class="lead-duration duration">14.198</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
@@ -1913,7 +1913,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">2.130</span>
+  <span class="lead-duration duration">3.228</span>
 
 </div>
 
@@ -1940,7 +1940,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.228</span>
+  <span class="lead-duration duration">0.852</span>
 
 </div>
 
@@ -1967,7 +1967,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I submit email <span class="argument">&quot;&quot;</span> and password <span class="argument">&quot;Test1234&quot;</span></span>
 
-  <span class="lead-duration duration">8.805</span>
+  <span class="lead-duration duration">9.320</span>
 
 </div>
 
@@ -1994,7 +1994,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Please enter your email address.&quot;</span></span>
 
-  <span class="lead-duration duration">0.873</span>
+  <span class="lead-duration duration">0.798</span>
 
 </div>
 
@@ -2039,7 +2039,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.139</span>
+  <span class="lead-duration duration">1.348</span>
 
           </div>
 
@@ -2052,13 +2052,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-24" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_1710415720.png" download target="_blank">
+      <a href="embeddings/embedding_640062192.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-24" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1710415720.png">
+        <img src="embeddings/embedding_640062192.png">
       </div>
     </div>
   </div>
@@ -2081,7 +2081,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">16.172</span>
+  <span class="lead-duration duration">13.639</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-25">
@@ -2124,7 +2124,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">3.717</span>
+  <span class="lead-duration duration">2.832</span>
 
 </div>
 
@@ -2151,7 +2151,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.627</span>
+  <span class="lead-duration duration">1.641</span>
 
 </div>
 
@@ -2178,7 +2178,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;1234&quot;</span></span>
 
-  <span class="lead-duration duration">9.910</span>
+  <span class="lead-duration duration">7.936</span>
 
 </div>
 
@@ -2205,7 +2205,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Password must be at least 6 characters.&quot;</span></span>
 
-  <span class="lead-duration duration">0.917</span>
+  <span class="lead-duration duration">1.229</span>
 
 </div>
 
@@ -2250,7 +2250,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.365</span>
+  <span class="lead-duration duration">1.356</span>
 
           </div>
 
@@ -2263,13 +2263,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-28" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_-2122089394.png" download target="_blank">
+      <a href="embeddings/embedding_1148711834.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-28" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2122089394.png">
+        <img src="embeddings/embedding_1148711834.png">
       </div>
     </div>
   </div>
@@ -2292,7 +2292,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">13.498</span>
+  <span class="lead-duration duration">14.707</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-29">
@@ -2335,7 +2335,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">2.275</span>
+  <span class="lead-duration duration">3.203</span>
 
 </div>
 
@@ -2362,7 +2362,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.268</span>
+  <span class="lead-duration duration">1.625</span>
 
 </div>
 
@@ -2387,9 +2387,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;1234&quot;</span></span>
+  <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;Abcdefghjk&quot;</span></span>
 
-  <span class="lead-duration duration">8.767</span>
+  <span class="lead-duration duration">8.531</span>
 
 </div>
 
@@ -2414,9 +2414,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
-  <span class="name">Message must be show with error <span class="argument">&quot;Password must be at least 6 characters.&quot;</span></span>
+  <span class="name">Message must be show with error <span class="argument">&quot;Password must contain at least 1 numeric character.&quot;</span></span>
 
-  <span class="lead-duration duration">1.185</span>
+  <span class="lead-duration duration">1.347</span>
 
 </div>
 
@@ -2461,7 +2461,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.426</span>
+  <span class="lead-duration duration">1.379</span>
 
           </div>
 
@@ -2474,13 +2474,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-32" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_-96635893.png" download target="_blank">
+      <a href="embeddings/embedding_1643997002.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-32" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-96635893.png">
+        <img src="embeddings/embedding_1643997002.png">
       </div>
     </div>
   </div>
@@ -2503,7 +2503,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.783</span>
+  <span class="lead-duration duration">13.896</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-33">
@@ -2546,7 +2546,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">3.374</span>
+  <span class="lead-duration duration">2.947</span>
 
 </div>
 
@@ -2573,7 +2573,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.594</span>
+  <span class="lead-duration duration">1.615</span>
 
 </div>
 
@@ -2600,7 +2600,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;12345678&quot;</span></span>
 
-  <span class="lead-duration duration">8.900</span>
+  <span class="lead-duration duration">8.492</span>
 
 </div>
 
@@ -2627,7 +2627,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Password must contain at least 1 lowercase character.&quot;</span></span>
 
-  <span class="lead-duration duration">0.913</span>
+  <span class="lead-duration duration">0.841</span>
 
 </div>
 
@@ -2672,7 +2672,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.359</span>
+  <span class="lead-duration duration">1.308</span>
 
           </div>
 
@@ -2685,13 +2685,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-36" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_1383660537.png" download target="_blank">
+      <a href="embeddings/embedding_262586453.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-36" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1383660537.png">
+        <img src="embeddings/embedding_262586453.png">
       </div>
     </div>
   </div>
@@ -2714,7 +2714,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">14.422</span>
+  <span class="lead-duration duration">13.258</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
@@ -2757,7 +2757,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I go to account page</span>
 
-  <span class="lead-duration duration">2.945</span>
+  <span class="lead-duration duration">2.942</span>
 
 </div>
 
@@ -2784,7 +2784,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
 
-  <span class="lead-duration duration">1.506</span>
+  <span class="lead-duration duration">0.496</span>
 
 </div>
 
@@ -2811,7 +2811,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;abc123456&quot;</span></span>
 
-  <span class="lead-duration duration">8.832</span>
+  <span class="lead-duration duration">9.089</span>
 
 </div>
 
@@ -2838,7 +2838,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">Message must be show with error <span class="argument">&quot;Password must contain at least 1 uppercase character.&quot;</span></span>
 
-  <span class="lead-duration duration">1.137</span>
+  <span class="lead-duration duration">0.731</span>
 
 </div>
 
@@ -2883,7 +2883,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.374</span>
+  <span class="lead-duration duration">1.356</span>
 
           </div>
 
@@ -2896,13 +2896,242 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-40" class="collapsable-control">
       <a>Verify validate register with email and password</a>
-      <a href="embeddings/embedding_-1863276542.png" download target="_blank">
+      <a href="embeddings/embedding_-1410668608.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-40" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1863276542.png">
+        <img src="embeddings/embedding_-1410668608.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2821457422.html">@Android</a>
+</div>
+
+
+  <span class="lead-duration duration">13.192</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-41">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Verify validate register with email and password</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-41" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-42">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-42" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">I go to account page</span>
+
+  <span class="lead-duration duration">2.337</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I press to button <span class="argument">&quot;Sign In&quot;</span></span>
+
+  <span class="lead-duration duration">1.331</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">I submit email <span class="argument">&quot;test003@example.com&quot;</span> and password <span class="argument">&quot;Ab123.,.,!@#$%^&quot;</span></span>
+
+  <span class="lead-duration duration">9.337</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Message must be show with error <span class="argument">&quot;Something isn't right with this password. Please only use standard alphabet letters, numbers, and symbol.&quot;</span></span>
+
+  <span class="lead-duration duration">0.185</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-43">
+          <a>java.lang.AssertionError:</a>
+      </div>
+      <div id="msg-43" class="collapse collapsable-details  in ">
+        <pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.qa.stepdef.app.SignUpSteps.verifyMessage(SignUpSteps.java:40)
+	at &#10045;.Message must be show with error &quot;Something isn't right with this password. Please only use standard alphabet letters, numbers, and symbol.&quot;(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/WWRegisterUser.feature:65)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-44">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-44" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">1.412</span>
+
+          </div>
+
+
+
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-45" class="collapsable-control">
+      <a>Verify validate register with email and password</a>
+      <a href="embeddings/embedding_413268300.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-45" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_413268300.png">
       </div>
     </div>
   </div>

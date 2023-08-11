@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>27 Jul 2023, 15:54</td>
+      <td>10 Aug 2023, 16:09</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@MoreAssets</td>
+          <td      class="passed"    >5</td>
           <td >0</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >4</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="3268280000">3.268</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="17203043000">17.203</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">3.268</span>
+  <span class="lead-duration duration">17.203</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Verify FAQ About Staking in Staking Page</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,15 +218,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-When failed">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Assets&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">3.268</span>
+  <span class="lead-duration duration">4.301</span>
 
 </div>
 
@@ -234,47 +234,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.StaleElementReferenceException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.StaleElementReferenceException: The element 'By.xpath: //*[@text=&quot;Assets&quot;]' is not linked to the same object in DOM anymore
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:825:8f64:6865:2b34%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:326)
-	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:674)
-	at com.qa.pages.MenuPage.tapOnAssets(MenuPage.java:81)
-	at com.qa.stepdef.VerifySteps.tapOnTextAndroidDevices(VerifySteps.java:56)
-	at &#10045;.I tap on &quot;Assets&quot; icon only devices Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/AssetScreen.feature:88)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -290,11 +249,11 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Approved SG&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.970</span>
 
 </div>
 
@@ -317,11 +276,11 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Staking&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.352</span>
 
 </div>
 
@@ -344,11 +303,11 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;FAQ About Staking 2&quot;</span> in screen <span class="argument">&quot;Assets&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">4.757</span>
 
 </div>
 
@@ -371,11 +330,11 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">Web view must display with text <span class="argument">&quot;SocialGood Support Team&quot;</span> devices Android</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">5.821</span>
 
 </div>
 
@@ -402,7 +361,7 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -414,13 +373,13 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-3" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.342</span>
+  <span class="lead-duration duration">1.416</span>
 
           </div>
 
@@ -431,15 +390,15 @@ Session ID: 415d4a19-8fa9-48da-86bc-152c06dc2f14
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
       <a>Verify FAQ About Staking in Staking Page</a>
-      <a href="embeddings/embedding_1032870011.png" download target="_blank">
+      <a href="embeddings/embedding_551220751.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
+    <div id="embedding-4" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1032870011.png">
+        <img src="embeddings/embedding_551220751.png">
       </div>
     </div>
   </div>

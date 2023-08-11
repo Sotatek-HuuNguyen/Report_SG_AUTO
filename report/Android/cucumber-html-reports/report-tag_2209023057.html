@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>SG_auto_Test</td>
-      <td>27 Jul 2023, 15:54</td>
+      <td>10 Aug 2023, 16:09</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Note</td>
-          <td      class="passed"    >3</td>
           <td >0</td>
-          <td >0</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">3</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="21276071000">21.276</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2440381000">2.440</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">21.276</span>
+  <span class="lead-duration duration">2.440</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Account to Shopping History to Activities History</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,15 +218,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">I tap on <span class="argument">&quot;Account&quot;</span> icon only devices Android</span>
 
-  <span class="lead-duration duration">4.793</span>
+  <span class="lead-duration duration">2.440</span>
 
 </div>
 
@@ -234,6 +234,56 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-2.local', ip: 'fe80:0:0:0:467:ba33:5277:bf26%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.sg.android.MainActivity, appPackage: com.socialgood_foundation.s..., automationName: UiAutomator2, deviceName: Xiaomi 11T, fullReset: false, noReset: true, platformName: android, systemPort: 10000, udid: knr8lv79nrwgqs7d}, deviceApiLevel: 33, deviceManufacturer: Xiaomi, deviceModel: 21081111RG, deviceName: knr8lv79nrwgqs7d, deviceScreenDensity: 440, deviceScreenSize: 1080x2400, deviceUDID: knr8lv79nrwgqs7d, fullReset: false, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 84, systemPort: 10000, takesScreenshot: true, udid: knr8lv79nrwgqs7d, viewportRect: {height: 2232, left: 0, top: 84, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: b1e034ce-b4b9-4416-a9c2-660f4c6bc06f
+*** Element info: {Using=xpath, value=//*[@text=&quot;Account&quot;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at com.qa.pages.BasePage.tapIconContainsText(BasePage.java:680)
+	at com.qa.pages.MenuPage.tapOnAccount(MenuPage.java:91)
+	at com.qa.stepdef.VerifySteps.tapOnTextAndroidDevices(VerifySteps.java:58)
+	at &#10045;.I tap on &quot;Account&quot; icon only devices Android(file:///Users/sotatek/IdeaProjects/socialgood_autotest_mobile/src/test/resources/features/android/ActivitiesPage.feature:70)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -249,11 +299,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I tap on <span class="argument">&quot;Activity History&quot;</span> in screen <span class="argument">&quot;Account&quot;</span> only devices Android</span>
 
-  <span class="lead-duration duration">15.677</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -276,11 +326,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">Screen Activities history must display</span>
 
-  <span class="lead-duration duration">0.805</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -307,7 +357,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -319,13 +369,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-3" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">1.538</span>
+  <span class="lead-duration duration">1.277</span>
 
           </div>
 
@@ -336,15 +386,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-4" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Account to Shopping History to Activities History</a>
-      <a href="embeddings/embedding_1421977709.png" download target="_blank">
+      <a href="embeddings/embedding_-1372843387.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-4" class="collapse collapsable-details ">
+    <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1421977709.png">
+        <img src="embeddings/embedding_-1372843387.png">
       </div>
     </div>
   </div>
